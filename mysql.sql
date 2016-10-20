@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- 主機: 127.0.0.1
--- 產生時間： 2016 年 09 月 25 日 21:09
--- 伺服器版本: 10.1.10-MariaDB
--- PHP 版本： 7.0.4
+-- 產生時間： 2016-10-20 10:03:33
+-- 伺服器版本: 10.1.13-MariaDB
+-- PHP 版本： 7.0.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,34 +17,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- 資料庫： `fanswoo-framework`
+-- 資料庫： `fanswoo_com_forex_exchange`
 --
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `fs_advertising`
---
-
-CREATE TABLE `fs_advertising` (
-  `advertisingid` mediumint(8) NOT NULL,
-  `uid` mediumint(8) NOT NULL,
-  `title` char(100) NOT NULL,
-  `href` char(100) NOT NULL,
-  `content` text NOT NULL,
-  `picids` char(100) NOT NULL,
-  `classids` char(100) NOT NULL,
-  `prioritynum` mediumint(8) NOT NULL,
-  `updatetime` datetime NOT NULL,
-  `status` int(1) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- 資料表的匯出資料 `fs_advertising`
---
-
-INSERT INTO `fs_advertising` (`advertisingid`, `uid`, `title`, `href`, `content`, `picids`, `classids`, `prioritynum`, `updatetime`, `status`) VALUES
-(1, 528502, 'TEST', 'product', '', '', '', 0, '2016-07-04 13:42:30', 1);
 
 -- --------------------------------------------------------
 
@@ -147,53 +121,6 @@ CREATE TABLE `fs_contact` (
 
 INSERT INTO `fs_contact` (`contactid`, `username`, `email`, `phone`, `company`, `content`, `status_process`, `classtype`, `updatetime`, `locale`, `status`) VALUES
 (1, 'Mimi Chang', 'mimi@fanswoo.com', '0912345678', '', 'TEST', 2, '問題詢問', '2015-08-14 05:17:09', 'zh-TW', 1);
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `fs_faq`
---
-
-CREATE TABLE `fs_faq` (
-  `faqid` mediumint(8) NOT NULL,
-  `uid` mediumint(8) NOT NULL DEFAULT '0',
-  `title` char(100) NOT NULL DEFAULT '',
-  `username` char(30) NOT NULL DEFAULT '',
-  `picids` char(100) NOT NULL DEFAULT '',
-  `classids` char(100) NOT NULL DEFAULT '',
-  `modelname` char(100) NOT NULL DEFAULT '',
-  `prioritynum` mediumint(8) NOT NULL DEFAULT '0',
-  `updatetime` datetime NOT NULL,
-  `locale` char(5) NOT NULL,
-  `status` int(1) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
-
---
--- 資料表的匯出資料 `fs_faq`
---
-
-INSERT INTO `fs_faq` (`faqid`, `uid`, `title`, `username`, `picids`, `classids`, `modelname`, `prioritynum`, `updatetime`, `locale`, `status`) VALUES
-(1, 528502, 'test', '', '', '', 'faq', 0, '2016-06-12 00:00:00', 'zh-TW', 1),
-(2, 528502, 'test2', '', '', '', 'faq', 0, '2016-06-20 00:00:00', 'zh-TW', 1);
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `fs_faq_field`
---
-
-CREATE TABLE `fs_faq_field` (
-  `faqid` mediumint(8) NOT NULL,
-  `content` text NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
-
---
--- 資料表的匯出資料 `fs_faq_field`
---
-
-INSERT INTO `fs_faq_field` (`faqid`, `content`) VALUES
-(1, 'test'),
-(2, 'test');
 
 -- --------------------------------------------------------
 
@@ -318,53 +245,6 @@ INSERT INTO `fs_note_field` (`noteid`, `content`) VALUES
 (6244, ''),
 (5, ''),
 (6245, '');
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `fs_pager`
---
-
-CREATE TABLE `fs_pager` (
-  `pagerid` mediumint(8) UNSIGNED NOT NULL,
-  `uid` mediumint(8) NOT NULL,
-  `username` char(30) NOT NULL,
-  `title` char(100) NOT NULL,
-  `slug` char(100) NOT NULL,
-  `href` char(100) NOT NULL,
-  `classids` char(100) NOT NULL,
-  `target` int(1) NOT NULL,
-  `viewnum` mediumint(8) NOT NULL,
-  `prioritynum` mediumint(8) NOT NULL,
-  `updatetime` datetime NOT NULL,
-  `locale` char(5) NOT NULL,
-  `status` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- 資料表的匯出資料 `fs_pager`
---
-
-INSERT INTO `fs_pager` (`pagerid`, `uid`, `username`, `title`, `slug`, `href`, `classids`, `target`, `viewnum`, `prioritynum`, `updatetime`, `locale`, `status`) VALUES
-(1, 528502, '', 'TEST', 'e0e1d48f', '', '', 0, 0, 0, '2016-07-04 04:57:02', 'zh-TW', 1);
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `fs_pager_field`
---
-
-CREATE TABLE `fs_pager_field` (
-  `pagerid` mediumint(8) NOT NULL,
-  `content` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- 資料表的匯出資料 `fs_pager_field`
---
-
-INSERT INTO `fs_pager_field` (`pagerid`, `content`) VALUES
-(1, 'TEST');
 
 -- --------------------------------------------------------
 
@@ -1054,7 +934,16 @@ INSERT INTO `fs_sessions` (`session_id`, `ip_address`, `user_agent`, `last_activ
 ('c01423671dc963470950adff6ab8d12e', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 1473324384, ''),
 ('99cb493794aad2cdf998c846f409a033', '::1', 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 1473478442, 'a:6:{s:9:"user_data";s:0:"";s:3:"uid";s:6:"528502";s:17:"last_admin_child1";s:4:"base";s:17:"last_admin_child2";s:6:"global";s:17:"last_admin_child3";s:6:"global";s:17:"last_admin_child4";s:15:"website_content";}'),
 ('7a3c126e0e965fe812157e8669b89600', '::1', 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 1473479284, ''),
-('5ccebde0ffe78c2b1e637c677d9d55a3', '::1', 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36', 1474112862, 'a:6:{s:9:"user_data";s:0:"";s:3:"uid";s:6:"528502";s:17:"last_admin_child1";s:4:"base";s:17:"last_admin_child2";s:4:"note";s:17:"last_admin_child3";s:4:"note";s:17:"last_admin_child4";s:9:"tablelist";}');
+('5ccebde0ffe78c2b1e637c677d9d55a3', '::1', 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36', 1474112862, 'a:6:{s:9:"user_data";s:0:"";s:3:"uid";s:6:"528502";s:17:"last_admin_child1";s:4:"base";s:17:"last_admin_child2";s:4:"note";s:17:"last_admin_child3";s:4:"note";s:17:"last_admin_child4";s:9:"tablelist";}'),
+('082e57b56c522e4bac099a9f097c4a18', '::1', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36', 1476948001, ''),
+('03cf82a0afe998ebcfb1929eb73f3cac', '::1', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36', 1476948001, 'a:1:{s:9:"user_data";s:0:"";}'),
+('b329aa3aac2abd0a03bb516f47098a1c', '::1', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36', 1476948218, ''),
+('5b50c5fda817fa298a6c72618ac2f0be', '::1', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36', 1476948218, 'a:1:{s:9:"user_data";s:0:"";}'),
+('fda28bb71b0bff45c6695fe838abc80b', '::1', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36', 1476948343, ''),
+('6f2a79f2dfecccdcc80d09003eadb67d', '::1', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36', 1476948343, 'a:1:{s:9:"user_data";s:0:"";}'),
+('0bde3b65272b1fffdda5240fe65e52c3', '::1', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36', 1476949246, ''),
+('e29cc9a2b2d315879b3e4353c568e237', '::1', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36', 1476949247, 'a:1:{s:9:"user_data";s:0:"";}'),
+('a333ad100ee101e5f7b754a3b561aa2b', '::1', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36', 1476949538, 'a:6:{s:9:"user_data";s:0:"";s:3:"uid";s:6:"528502";s:17:"last_admin_child1";s:4:"user";s:17:"last_admin_child2";s:6:"global";s:17:"last_admin_child3";s:6:"global";s:17:"last_admin_child4";s:4:"user";}');
 
 -- --------------------------------------------------------
 
@@ -1078,7 +967,7 @@ CREATE TABLE `fs_setting` (
 INSERT INTO `fs_setting` (`settingid`, `keyword`, `value`, `modelname`, `locale`, `status`) VALUES
 (1, 'website_title_name', 'fansWoo', '', 'en-US', 1),
 (2, 'website_title_introduction', 'testing', '', 'en-US', 1),
-(3, 'website_title_name', 'fansWoo 瘋沃科技', '', 'zh-TW', 1),
+(3, 'website_title_name', '外匯網站', '', 'zh-TW', 1),
 (4, 'website_title_introduction', '網站測試中', '', 'zh-TW', 1),
 (5, 'website_name', 'fansWoo website', '', 'en-US', 1),
 (6, 'website_logo', 'img/favicon.ico', '', 'en-US', 1),
@@ -1116,284 +1005,6 @@ INSERT INTO `fs_setting` (`settingid`, `keyword`, `value`, `modelname`, `locale`
 (39, 'smtp_ssl_checkbox', '1', 'smtp', 'en-US', 1),
 (40, 'website_name', 'fansWoo', '', 'zh-TW', 1),
 (41, 'website_logo', 'img/favicon.ico', '', 'zh-TW', 1);
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `fs_shop_cart`
---
-
-CREATE TABLE `fs_shop_cart` (
-  `cartid` mediumint(8) NOT NULL,
-  `orderid` mediumint(8) NOT NULL,
-  `productid` mediumint(8) NOT NULL,
-  `stockid` mediumint(8) NOT NULL,
-  `price` mediumint(8) NOT NULL,
-  `amount` mediumint(8) NOT NULL,
-  `uid` mediumint(8) NOT NULL,
-  `sessionid` text NOT NULL,
-  `status` int(1) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- 資料表的匯出資料 `fs_shop_cart`
---
-
-INSERT INTO `fs_shop_cart` (`cartid`, `orderid`, `productid`, `stockid`, `price`, `amount`, `uid`, `sessionid`, `status`) VALUES
-(1, 528501, 528501, 2, 1000, 1, 0, '04904d4ecaa4f4954a16e3f56209fd5a', 1),
-(2, 528502, 528502, 3, 2000, 1, 0, '04904d4ecaa4f4954a16e3f56209fd5a', 1),
-(3, 528503, 528501, 1, 1000, 1, 528502, '04904d4ecaa4f4954a16e3f56209fd5a', 1),
-(4, 528503, 528502, 4, 2000, 1, 528502, '04904d4ecaa4f4954a16e3f56209fd5a', 1),
-(5, 528508, 528501, 1, 1000, 1, 0, 'c01423671dc963470950adff6ab8d12e', 1);
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `fs_shop_gift`
---
-
-CREATE TABLE `fs_shop_gift` (
-  `giftid` mediumint(8) NOT NULL,
-  `uid` mediumint(8) NOT NULL,
-  `name` char(100) NOT NULL,
-  `synopsis` char(200) NOT NULL,
-  `picids` char(100) NOT NULL,
-  `prioritynum` mediumint(8) NOT NULL,
-  `updatetime` datetime NOT NULL,
-  `status` int(1) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- 資料表的匯出資料 `fs_shop_gift`
---
-
-INSERT INTO `fs_shop_gift` (`giftid`, `uid`, `name`, `synopsis`, `picids`, `prioritynum`, `updatetime`, `status`) VALUES
-(1, 528502, '贈品A', '贈品A簡介', '', 0, '2016-05-27 17:04:44', 1),
-(2, 528502, '贈品B', '贈品B簡介', '', 0, '2016-05-27 17:04:49', 1),
-(3, 528502, '贈品C', '贈品C簡介', '', 0, '2016-05-27 17:04:55', 1);
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `fs_shop_order`
---
-
-CREATE TABLE `fs_shop_order` (
-  `orderid` mediumint(8) NOT NULL,
-  `uid` mediumint(8) DEFAULT NULL,
-  `sessionid` text NOT NULL,
-  `receive_name` char(32) DEFAULT '',
-  `receive_email` char(100) DEFAULT NULL,
-  `receive_phone` char(32) DEFAULT '',
-  `receive_time` char(32) DEFAULT '',
-  `receive_address` char(100) DEFAULT '',
-  `receive_remark` text,
-  `receive_store_id` char(32) DEFAULT NULL,
-  `receive_store_name` char(32) DEFAULT NULL,
-  `pay_paytype` char(32) DEFAULT '',
-  `credit_amount` mediumint(2) DEFAULT NULL,
-  `pay_sendtype` char(32) DEFAULT '',
-  `pay_price_total` mediumint(10) DEFAULT '0',
-  `pay_price_freight` mediumint(10) DEFAULT '0',
-  `pay_account` char(50) DEFAULT '',
-  `pay_account_name` char(20) DEFAULT NULL,
-  `pay_name` char(32) DEFAULT '',
-  `pay_paytime` datetime DEFAULT NULL,
-  `pay_remark` text,
-  `pay_status` int(1) DEFAULT '0',
-  `transport_mode` char(100) NOT NULL,
-  `transport_id` char(30) DEFAULT NULL,
-  `transport_base_price` mediumint(8) NOT NULL,
-  `transport_additional_price` mediumint(8) NOT NULL,
-  `coupon_count` mediumint(8) DEFAULT NULL,
-  `tradein_count` mediumint(8) DEFAULT NULL,
-  `paycheck_status` int(1) DEFAULT '0',
-  `product_status` int(1) DEFAULT '0',
-  `order_status` int(1) DEFAULT '0',
-  `sendtime` datetime NOT NULL,
-  `setuptime` datetime DEFAULT NULL,
-  `updatetime` datetime DEFAULT NULL,
-  `status` int(1) DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- 資料表的匯出資料 `fs_shop_order`
---
-
-INSERT INTO `fs_shop_order` (`orderid`, `uid`, `sessionid`, `receive_name`, `receive_email`, `receive_phone`, `receive_time`, `receive_address`, `receive_remark`, `receive_store_id`, `receive_store_name`, `pay_paytype`, `credit_amount`, `pay_sendtype`, `pay_price_total`, `pay_price_freight`, `pay_account`, `pay_account_name`, `pay_name`, `pay_paytime`, `pay_remark`, `pay_status`, `transport_mode`, `transport_id`, `transport_base_price`, `transport_additional_price`, `coupon_count`, `tradein_count`, `paycheck_status`, `product_status`, `order_status`, `sendtime`, `setuptime`, `updatetime`, `status`) VALUES
-(528501, 0, '04904d4ecaa4f4954a16e3f56209fd5a', 'Mimi', 'mimi@fanswoo.com', '0912345678', 'afternoon', '台北市士林區419號', 'TEST', '', '', '', 0, '', 1160, 160, '', '', 'atm', '2016-07-04 15:22:15', '', 0, '宅配', '', 120, 40, 0, 0, 0, 0, 0, '2016-07-04 15:22:15', '2016-07-04 15:23:38', '2016-07-04 15:22:15', 1),
-(528502, 0, '04904d4ecaa4f4954a16e3f56209fd5a', 'Mimi', 'mimi@fanswoo.com', '0912345678', 'morning', '台北市士林區419號', '非會員測試購物', '', '', '', 0, '', 2160, 160, '', '', 'atm', '2016-07-04 15:23:42', '', 0, '宅配', '', 120, 40, 0, 0, 0, 0, 0, '2016-07-04 15:23:42', '2016-07-04 15:38:51', '2016-07-04 15:23:42', 1),
-(528503, 528502, '04904d4ecaa4f4954a16e3f56209fd5a', '總管理員', 'admin@fanswoo.com', '0912345678', 'morning', '台北市士林區419號', '會員測試購物', '', '', '', 0, '', 3200, 200, '', '', 'atm', '2016-07-04 15:38:58', '', 0, '宅配', '', 120, 40, 0, 0, 0, 0, 0, '2016-07-04 15:38:58', '2016-07-04 15:44:31', '2016-07-04 15:38:58', 1),
-(528504, 0, '', '', '', '', '', '', NULL, '', '', '', 0, '', 0, 0, '', '', '', NULL, NULL, 0, '', '', 0, 0, 0, 0, 0, 0, 0, '0000-00-00 00:00:00', NULL, NULL, 0),
-(528505, 0, '', '', '', '', '', '', NULL, '', '', '', 0, '', 0, 0, '', '', '', NULL, NULL, 0, '', '', 0, 0, 0, 0, 0, 0, 0, '0000-00-00 00:00:00', NULL, NULL, 0),
-(528506, 0, '', '', '', '', '', '', NULL, '', '', '', 0, '', 0, 0, '', '', '', NULL, NULL, 0, '', '', 0, 0, 0, 0, 0, 0, 0, '0000-00-00 00:00:00', NULL, NULL, 0),
-(528507, 0, '', '', '', '', '', '', NULL, '', '', '', 0, '', 0, 0, '', '', '', NULL, NULL, 0, '', '', 0, 0, 0, 0, 0, 0, 0, '0000-00-00 00:00:00', NULL, NULL, 0),
-(528508, 0, 'c01423671dc963470950adff6ab8d12e', '', '', '', '', '', '', '', '', 'card', 0, '', 1160, 160, '', '', 'Pay2Go', '2016-09-08 16:46:24', '', 0, '宅配', '', 120, 40, 0, 0, 0, 0, -1, '2016-09-08 16:46:24', '2016-09-08 16:46:24', '2016-09-08 16:46:24', 1),
-(528509, NULL, '99cb493794aad2cdf998c846f409a033', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'atm', '2016-09-10 11:36:14', NULL, NULL, '宅配', NULL, 120, 40, NULL, NULL, NULL, NULL, -1, '2016-09-10 11:36:14', '2016-09-10 11:36:14', '2016-09-10 11:36:14', 1),
-(528510, 528502, '99cb493794aad2cdf998c846f409a033', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 'atm', '2016-09-10 11:45:59', NULL, NULL, '宅配', NULL, 120, 40, NULL, 0, NULL, NULL, -1, '2016-09-10 11:45:59', '2016-09-10 11:45:59', '2016-09-10 11:45:59', 1),
-(528511, NULL, '7a3c126e0e965fe812157e8669b89600', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'atm', '2016-09-10 11:48:04', NULL, NULL, '宅配', NULL, 120, 40, NULL, NULL, NULL, NULL, -1, '2016-09-10 11:48:04', '2016-09-10 11:48:04', '2016-09-10 11:48:04', 1);
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `fs_shop_order_allpay_field`
---
-
-CREATE TABLE `fs_shop_order_allpay_field` (
-  `orderid` mediumint(8) NOT NULL,
-  `tradeno` char(100) NOT NULL,
-  `pay_type` char(32) NOT NULL,
-  `credit_amount` mediumint(2) NOT NULL,
-  `bank_code` char(3) NOT NULL,
-  `virtual_account` char(16) NOT NULL,
-  `pay_expire_date` char(10) NOT NULL,
-  `paytime` datetime NOT NULL,
-  `fail_code` mediumint(8) NOT NULL,
-  `fail_msg` char(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `fs_shop_order_pay2go_field`
---
-
-CREATE TABLE `fs_shop_order_pay2go_field` (
-  `orderid` mediumint(8) NOT NULL,
-  `merchantid` char(15) CHARACTER SET utf8 NOT NULL,
-  `tradeno` char(20) CHARACTER SET utf8 NOT NULL,
-  `merchant_order_no` char(20) CHARACTER SET utf8 NOT NULL,
-  `amt` mediumint(10) NOT NULL,
-  `payment_type` char(10) CHARACTER SET utf8 NOT NULL,
-  `check_code` char(50) CHARACTER SET utf8 NOT NULL,
-  `pay_time` datetime NOT NULL,
-  `card_4_no` char(4) CHARACTER SET utf8 NOT NULL,
-  `credit_amount` mediumint(2) NOT NULL,
-  `bank_code` char(10) CHARACTER SET utf8 NOT NULL,
-  `virtual_account` char(30) CHARACTER SET utf8 NOT NULL,
-  `pay_bank_code` char(10) CHARACTER SET utf8 NOT NULL,
-  `pay_account_5_code` char(5) CHARACTER SET utf8 NOT NULL,
-  `ExpireDate` datetime NOT NULL,
-  `response_status` char(10) CHARACTER SET utf8 NOT NULL,
-  `response_msg` char(50) CHARACTER SET utf8 NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `fs_shop_product`
---
-
-CREATE TABLE `fs_shop_product` (
-  `productid` mediumint(8) NOT NULL,
-  `uid` mediumint(8) NOT NULL,
-  `name` char(100) NOT NULL,
-  `price` mediumint(10) NOT NULL,
-  `price_original` mediumint(10) NOT NULL,
-  `cost` mediumint(10) NOT NULL,
-  `classids` char(100) NOT NULL,
-  `picids` char(100) NOT NULL,
-  `content` text NOT NULL,
-  `content_specification` text NOT NULL,
-  `synopsis` text NOT NULL,
-  `warehouseid` text NOT NULL,
-  `prioritynum` mediumint(8) NOT NULL,
-  `updatetime` datetime NOT NULL,
-  `shelves_status` int(1) NOT NULL,
-  `status` int(1) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- 資料表的匯出資料 `fs_shop_product`
---
-
-INSERT INTO `fs_shop_product` (`productid`, `uid`, `name`, `price`, `price_original`, `cost`, `classids`, `picids`, `content`, `content_specification`, `synopsis`, `warehouseid`, `prioritynum`, `updatetime`, `shelves_status`, `status`) VALUES
-(528501, 528502, 'TEST PRODUCT', 1000, 0, 500, '2', '2', '產品內容', '產品規格', '產品簡介', 'A00015', 0, '2016-08-31 15:31:27', 1, 1),
-(528502, 528502, 'TEST PRODUCT2', 2000, 0, 1000, '3', '', '產品內容', '產品規格', '產品簡介', 'A00015', 0, '2016-07-04 14:13:52', 1, 1);
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `fs_shop_product_stock`
---
-
-CREATE TABLE `fs_shop_product_stock` (
-  `stockid` mediumint(8) NOT NULL,
-  `productid` mediumint(8) NOT NULL,
-  `classname1` char(100) NOT NULL,
-  `classname2` char(100) NOT NULL,
-  `color_rgb` char(6) NOT NULL,
-  `stocknum` mediumint(8) NOT NULL,
-  `prioritynum` mediumint(8) NOT NULL,
-  `status` int(1) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- 資料表的匯出資料 `fs_shop_product_stock`
---
-
-INSERT INTO `fs_shop_product_stock` (`stockid`, `productid`, `classname1`, `classname2`, `color_rgb`, `stocknum`, `prioritynum`, `status`) VALUES
-(1, 528501, '黑色', 'XL', '000000', 99, 4, 1),
-(2, 528501, '白色', 'M', 'FFFFFF', 149, 3, 1),
-(3, 528502, '黃色', 'S', 'FFFF77', 14, 4, 1),
-(4, 528502, '綠色', 'M', '00AA00', 19, 3, 1);
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `fs_shop_transport`
---
-
-CREATE TABLE `fs_shop_transport` (
-  `transportid` mediumint(8) NOT NULL,
-  `uid` mediumint(8) NOT NULL,
-  `name` char(100) NOT NULL,
-  `company` char(100) NOT NULL,
-  `url` text NOT NULL,
-  `is_store` mediumint(2) NOT NULL,
-  `store_url` text NOT NULL,
-  `base_price` mediumint(10) NOT NULL,
-  `additional_price` mediumint(10) NOT NULL,
-  `prioritynum` mediumint(8) NOT NULL,
-  `updatetime` datetime NOT NULL,
-  `status` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- 資料表的匯出資料 `fs_shop_transport`
---
-
-INSERT INTO `fs_shop_transport` (`transportid`, `uid`, `name`, `company`, `url`, `is_store`, `store_url`, `base_price`, `additional_price`, `prioritynum`, `updatetime`, `status`) VALUES
-(1, 528501, '宅配', '黑貓宅急便', 'http://www.t-cat.com.tw/inquire/trace.aspx', 0, '', 120, 40, 0, '2015-11-09 17:20:58', 1),
-(2, 528501, '國內快捷', '中華郵政', 'http://postserv.post.gov.tw/webpost/CSController?cmd=POS4001_1&_SYS_ID=D&_MENU_ID=189&_ACTIVE_ID=190', 0, '', 70, 15, 0, '2015-11-09 17:23:42', 1);
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `fs_showpiece`
---
-
-CREATE TABLE `fs_showpiece` (
-  `showpieceid` mediumint(8) NOT NULL,
-  `uid` mediumint(8) NOT NULL,
-  `name` char(32) NOT NULL,
-  `price` mediumint(10) NOT NULL,
-  `classids` char(100) NOT NULL,
-  `picids` char(100) NOT NULL,
-  `synopsis` text NOT NULL,
-  `content` text NOT NULL,
-  `content_specification` text NOT NULL,
-  `prioritynum` mediumint(8) NOT NULL,
-  `updatetime` datetime NOT NULL,
-  `status` int(1) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- 資料表的匯出資料 `fs_showpiece`
---
-
-INSERT INTO `fs_showpiece` (`showpieceid`, `uid`, `name`, `price`, `classids`, `picids`, `synopsis`, `content`, `content_specification`, `prioritynum`, `updatetime`, `status`) VALUES
-(528501, 528502, 'TEST', 0, '', '', '產品簡介', '產品內容', '產品規格', 0, '2016-07-04 13:45:39', -1);
 
 -- --------------------------------------------------------
 
@@ -1500,12 +1111,6 @@ INSERT INTO `fs_user_verification` (`uid`, `email`, `password`, `password_salt`,
 --
 
 --
--- 資料表索引 `fs_advertising`
---
-ALTER TABLE `fs_advertising`
-  ADD UNIQUE KEY `advertisingid` (`advertisingid`);
-
---
 -- 資料表索引 `fs_browsing_log`
 --
 ALTER TABLE `fs_browsing_log`
@@ -1530,18 +1135,6 @@ ALTER TABLE `fs_contact`
   ADD UNIQUE KEY `contactid` (`contactid`);
 
 --
--- 資料表索引 `fs_faq`
---
-ALTER TABLE `fs_faq`
-  ADD UNIQUE KEY `qaid` (`faqid`);
-
---
--- 資料表索引 `fs_faq_field`
---
-ALTER TABLE `fs_faq_field`
-  ADD UNIQUE KEY `qaid` (`faqid`);
-
---
 -- 資料表索引 `fs_file`
 --
 ALTER TABLE `fs_file`
@@ -1558,18 +1151,6 @@ ALTER TABLE `fs_note`
 --
 ALTER TABLE `fs_note_field`
   ADD UNIQUE KEY `noteid` (`noteid`);
-
---
--- 資料表索引 `fs_pager`
---
-ALTER TABLE `fs_pager`
-  ADD PRIMARY KEY (`pagerid`);
-
---
--- 資料表索引 `fs_pager_field`
---
-ALTER TABLE `fs_pager_field`
-  ADD PRIMARY KEY (`pagerid`);
 
 --
 -- 資料表索引 `fs_page_setting`
@@ -1604,60 +1185,6 @@ ALTER TABLE `fs_setting`
   ADD UNIQUE KEY `settingid` (`settingid`);
 
 --
--- 資料表索引 `fs_shop_cart`
---
-ALTER TABLE `fs_shop_cart`
-  ADD UNIQUE KEY `cartid` (`cartid`);
-
---
--- 資料表索引 `fs_shop_gift`
---
-ALTER TABLE `fs_shop_gift`
-  ADD UNIQUE KEY `giftid` (`giftid`);
-
---
--- 資料表索引 `fs_shop_order`
---
-ALTER TABLE `fs_shop_order`
-  ADD UNIQUE KEY `ordersid` (`orderid`);
-
---
--- 資料表索引 `fs_shop_order_allpay_field`
---
-ALTER TABLE `fs_shop_order_allpay_field`
-  ADD UNIQUE KEY `orderid` (`orderid`);
-
---
--- 資料表索引 `fs_shop_order_pay2go_field`
---
-ALTER TABLE `fs_shop_order_pay2go_field`
-  ADD PRIMARY KEY (`orderid`);
-
---
--- 資料表索引 `fs_shop_product`
---
-ALTER TABLE `fs_shop_product`
-  ADD UNIQUE KEY `productid` (`productid`);
-
---
--- 資料表索引 `fs_shop_product_stock`
---
-ALTER TABLE `fs_shop_product_stock`
-  ADD UNIQUE KEY `stockid` (`stockid`);
-
---
--- 資料表索引 `fs_shop_transport`
---
-ALTER TABLE `fs_shop_transport`
-  ADD UNIQUE KEY `transportid` (`transportid`);
-
---
--- 資料表索引 `fs_showpiece`
---
-ALTER TABLE `fs_showpiece`
-  ADD UNIQUE KEY `showpieceid` (`showpieceid`);
-
---
 -- 資料表索引 `fs_user`
 --
 ALTER TABLE `fs_user`
@@ -1686,11 +1213,6 @@ ALTER TABLE `fs_user_verification`
 --
 
 --
--- 使用資料表 AUTO_INCREMENT `fs_advertising`
---
-ALTER TABLE `fs_advertising`
-  MODIFY `advertisingid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
 -- 使用資料表 AUTO_INCREMENT `fs_browsing_log`
 --
 ALTER TABLE `fs_browsing_log`
@@ -1711,16 +1233,6 @@ ALTER TABLE `fs_comment`
 ALTER TABLE `fs_contact`
   MODIFY `contactid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- 使用資料表 AUTO_INCREMENT `fs_faq`
---
-ALTER TABLE `fs_faq`
-  MODIFY `faqid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- 使用資料表 AUTO_INCREMENT `fs_faq_field`
---
-ALTER TABLE `fs_faq_field`
-  MODIFY `faqid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
 -- 使用資料表 AUTO_INCREMENT `fs_file`
 --
 ALTER TABLE `fs_file`
@@ -1735,16 +1247,6 @@ ALTER TABLE `fs_note`
 --
 ALTER TABLE `fs_note_field`
   MODIFY `noteid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6246;
---
--- 使用資料表 AUTO_INCREMENT `fs_pager`
---
-ALTER TABLE `fs_pager`
-  MODIFY `pagerid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- 使用資料表 AUTO_INCREMENT `fs_pager_field`
---
-ALTER TABLE `fs_pager_field`
-  MODIFY `pagerid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- 使用資料表 AUTO_INCREMENT `fs_page_setting`
 --
@@ -1765,51 +1267,6 @@ ALTER TABLE `fs_polling`
 --
 ALTER TABLE `fs_setting`
   MODIFY `settingid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
---
--- 使用資料表 AUTO_INCREMENT `fs_shop_cart`
---
-ALTER TABLE `fs_shop_cart`
-  MODIFY `cartid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
---
--- 使用資料表 AUTO_INCREMENT `fs_shop_gift`
---
-ALTER TABLE `fs_shop_gift`
-  MODIFY `giftid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
---
--- 使用資料表 AUTO_INCREMENT `fs_shop_order`
---
-ALTER TABLE `fs_shop_order`
-  MODIFY `orderid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=528512;
---
--- 使用資料表 AUTO_INCREMENT `fs_shop_order_allpay_field`
---
-ALTER TABLE `fs_shop_order_allpay_field`
-  MODIFY `orderid` mediumint(8) NOT NULL AUTO_INCREMENT;
---
--- 使用資料表 AUTO_INCREMENT `fs_shop_order_pay2go_field`
---
-ALTER TABLE `fs_shop_order_pay2go_field`
-  MODIFY `orderid` mediumint(8) NOT NULL AUTO_INCREMENT;
---
--- 使用資料表 AUTO_INCREMENT `fs_shop_product`
---
-ALTER TABLE `fs_shop_product`
-  MODIFY `productid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=528503;
---
--- 使用資料表 AUTO_INCREMENT `fs_shop_product_stock`
---
-ALTER TABLE `fs_shop_product_stock`
-  MODIFY `stockid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
---
--- 使用資料表 AUTO_INCREMENT `fs_shop_transport`
---
-ALTER TABLE `fs_shop_transport`
-  MODIFY `transportid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- 使用資料表 AUTO_INCREMENT `fs_showpiece`
---
-ALTER TABLE `fs_showpiece`
-  MODIFY `showpieceid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=528502;
 --
 -- 使用資料表 AUTO_INCREMENT `fs_user`
 --
