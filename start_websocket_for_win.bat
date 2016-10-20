@@ -1,0 +1,2 @@
+php websocket.php
+pause
