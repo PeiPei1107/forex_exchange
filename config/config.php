@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '/fanswoo-framework/dev/app/';
+$config['base_url']	= '/forex_exchange/';
 
 /*
 |--------------------------------------------------------------------------
