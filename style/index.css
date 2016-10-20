@@ -1,0 +1,7 @@
+.content01 { width:100%;height:1028px;position:relative;overflow:hidden;z-index:1;}  
+.content01 .bg{width:104%;height:1028px;position:relative; overflow:hidden;left:-2%;top:0px;padding-bottom:30px;} 
+.content01 .centerbox{
+	height: 50%;
+	position: absolute;
+	text-align: center;
+}
