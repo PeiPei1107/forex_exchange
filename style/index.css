@@ -1,7 +1,120 @@
-.content01 { width:100%;height:1028px;position:relative;overflow:hidden;z-index:1;}  
-.content01 .bg{width:104%;height:1028px;position:relative; overflow:hidden;left:-2%;top:0px;padding-bottom:30px;} 
-.content01 .centerbox{
-	height: 50%;
-	position: absolute;
-	text-align: center;
+.content01{
+    display: block;
+    position: relative;
+    margin: 0 auto;
 }
+.content01 .blackbg{
+    display: block;
+    position: absolute; 
+    width: 100%;
+    top:0px;
+    left:0px ;
+    z-index: 1;
+}
+.content01 .centerbox 
+{
+    display: block;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    top:-650px;
+/*    overflow: hidden;*/ 
+   z-index: 1;
+
+}
+
+.content01 .centerbox h1
+{
+    color: white;
+    text-align: center;
+    letter-spacing:10px;
+    position: absolute;
+    width: 100%;
+    font-size: 30pt;
+    font-family: "超研澤中特明","儷黑體";
+    margin-left: 15px;
+    margin-top: -150px;
+}
+
+.content01 .people{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.content01 .people .one  img{
+/*    display: block;*/
+    position: absolute;
+    margin: 0 auto;
+    top: -740px;
+    right: 705px;
+    width: 400px;
+}
+.content01 .people .two img{
+/*    display: block;*/
+    position: absolute;
+    top: -870px;
+    left: 377px;
+    width: 400px;
+}
+.content01 .people .three img{
+/*    display: block;*/
+    position: absolute;
+    top: -902px;
+    left: 44px;
+    width: 400px;
+}
+.content01 .people .four img{
+/*    display: block;*/
+    position: absolute;
+    top: -884px;
+    right: 150px;
+    width: 400px;
+}
+.content01 .people .five img{
+/*    display: block;*/
+    position: absolute;
+    top: -920px;
+    right: -30px;
+    width: 400px;
+}
+
+
+/*nav .container-fluid ul{
+    text-decoration: none;
+    font-family: "超研澤中特明";
+    color: #323333;
+}*/
+
+
+
+
+.header_center{
+    display: block;
+    position: absolute;
+    left: 650px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 0px;
+}
+/*
+nav  .container-fluid .navbar-centerbox {
+    display: block;
+   position: absolute;
+   width: 600px;
+   height: 65px;
+   margin-left: 383px;
+
+}*/
+
+.li{
+    font-family: "超研澤中特明";
+    margin-top: 10px;
+    color: #323333;
+    float: left;
+margin-left: 30px;
+}
+
