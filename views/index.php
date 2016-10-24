@@ -36,10 +36,15 @@
         </div> 
       </div>
       <div class="centerbox">
-        <h1>型社會變成型社會</h1>
-        <span>你 依然是金錢制度下</span><br>
-        <span>無法翻身的那群人嗎?</span>
-      </div>
+        <h1><img src="img/index/content01/M.png" class="one">型社會變成<img src="img/index/content01/L.png" class="two">&nbsp&nbsp&nbsp型社會</h1>
+        <div class="text one">
+          <p>你</p><p>&nbsp</p><p>依</p><p>然</p><p>是</p><p>金</p><p>錢</p>
+        <p>制</p><p>度</p><p>下</p></br>
+       </div>
+        <div class="text two">
+          <p>無</p><p>法</p><p>翻</p><p>身</p><p>的</p><p>那</p><p>群</p>
+          <p>人</p><p>嗎?</p>
+        </div>
   <!-- headerbar -->
     <div class="header_center">
       <img src="img/index/content01/headerbar.png">
@@ -53,6 +58,9 @@
         <a href="#content03" class="li">
           <p>夢想實踐</p>
         </a>
+        <a href="#content03" class="li">
+          <p>致富機會</p>
+        </a>
         <a href="#content04" class="li">
           <p>四大保證</p>
         </a>
@@ -62,17 +70,21 @@
       </div>
     </div>
 </div>
-<!-- <nav class="bottombar" role="navigation">
-  <img src="" >
-  <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#content01">從這開始</a></li>
-        <li class="active"><a href="#content02">投資困境</a></li>
-        <li class="active"><a href="#content03">夢想實踐</a></li>
-        <li class="active"><a href="#content04">四大保證</a></li>
-        <li class="active"><a href="#content05">立即參加</a></li>
-      </ul> -->
-  <!--   </div> --><!-- /.navbar-collapse -->
-  <!-- </div> --><!-- /.container-fluid -->
-<!-- </nav> -->
+<div class="content02">
+  <div class="moneybg">
+      <img src="img/index/content02/content02_bg1.png"></div>  
+  <div class="money">
+    <div class="left front">
+      <img src="img/index/content02/left_money.png"></div>
+<!--     <div class="left back">
+     <img src="img/index/content02/left_back.png"></div> -->
+    <div class="right front">
+     <img src="img/index/content02/right_money.png"></div>
+    <!-- <div class="right back">
+     <img src="img/index/content02/right_back.png"></div>
+  </div> -->
+<!--   <div class="coinbg">
+      <img src="img/index/content02/content02_bg2.png"></div>
+</div> -->
+</div>
 </body>

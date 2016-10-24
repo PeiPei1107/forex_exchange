@@ -1,3 +1,16 @@
+/*Internet Explorer用 支援4+*/
+/*(要擺第一個)*/
+@font-face {
+  font-family:"超研澤中特明";
+  src:url(img/font/bffc3d1cefb8031614b6ea315738297c.ttf); /*不可用 format()*/
+}
+/*其他瀏覽器用*/
+@font-face {
+  font-family:"超研澤中特明";
+  src:url(img/font/bffc3d1cefb8031614b6ea315738297c.ttf) format("truetype");
+}
+
+
 .content01{
     display: block;
     position: relative;
@@ -14,36 +27,81 @@
 .content01 .centerbox 
 {
     display: block;
-    position: relative;
-    height: 100%;
+    position: absolute;
+    width: 860px;
+    left: 548px;
+    height: 1080px;
     margin: 0 auto;
-    top:-650px;
-/*    overflow: hidden;*/ 
-   z-index: 1;
+    top: 0px;
+    /* overflow: hidden; */
+    z-index: 1;
 
 }
-
-.content01 .centerbox h1
-{
+.content01 .centerbox h1 {
     color: white;
     text-align: center;
-    letter-spacing:10px;
+    letter-spacing: 10px;
     position: absolute;
+    padding-top: 165px;
+    padding-left: 212px;
     width: 100%;
     font-size: 30pt;
-    font-family: "超研澤中特明","儷黑體";
-    margin-left: 15px;
-    margin-top: -150px;
+   font-family:"超研澤中特明";
 }
+
+.content01 .centerbox h1 img.one {
+    position: absolute;
+    width: 20%;
+   left: 152px;
+    top: 166px;
+}
+
+.content01 .centerbox h1 img.two {
+    position: absolute;
+    width: 15%;
+    left: 515px;
+    top: 166px;
+}
+
+
+.content01 .centerbox .text p
+{
+    display: block;
+    float: left;
+    margin-left:5px ;
+    line-height: 30px;
+    color: white;
+    font-size: 20pt;
+    height: 35px;
+    z-index: 1;
+    color: white;
+    font-family:"超研澤中特明";
+}
+
+.content01 .centerbox .text.one {
+    bottom: 386px;
+    left: 250px;
+    margin-left: 65px;
+    line-height: 30px;
+    position: absolute;
+}
+
+.content01 .centerbox .text.two {
+    bottom: 325px;
+    left: 250px;
+    margin-left: 65px;
+    line-height: 30px;
+    position: absolute;
+}
+
 
 .content01 .people{
     display: block;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     z-index: 1;
 }
-
 .content01 .people .one  img{
 /*    display: block;*/
     position: absolute;
@@ -80,41 +138,120 @@
     right: -30px;
     width: 400px;
 }
+.header_center {
+    display: block;
+    position: relative;
+    width: 1383px;
+    height: 65px;
+    margin: 0 auto;
+    top: 1015px;
+    right: 548px;
+     z-index: 1; 
+/*    background-color: white;*/
+}
+.header_center img {
+    position: absolute;
+    width: 140%;
+    height: 65px;
+    left: 0px;
 
-
-/*nav .container-fluid ul{
-    text-decoration: none;
-    font-family: "超研澤中特明";
-    color: #323333;
-}*/
-
-
-
-
-.header_center{
+/*     top: 500px; */
+    z-index: 1;
+}
+.header_center .nav {
     display: block;
     position: absolute;
-    left: 650px;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    bottom: 0px;
+    left: 150px;
+    /* width: 100%; */
+    /* text-align: center; */
+    margin-left: 479PX;
+    bottom: 11px;
+    z-index: 1;
 }
-/*
-nav  .container-fluid .navbar-centerbox {
-    display: block;
-   position: absolute;
-   width: 600px;
-   height: 65px;
-   margin-left: 383px;
-
-}*/
-
 .li{
+    font-size: 12pt;
     font-family: "超研澤中特明";
     margin-top: 10px;
     color: #323333;
     float: left;
-margin-left: 30px;
+    margin-left: 50px;
+}
+/*----------------------------------content2-------------------------*/
+.content02 {
+    width: 100%;
+    height: 1000px;
+    position: relative;
 }
 
+
+.content02 .moneybg img{
+    display:block;
+    position: absolute;
+    /*background-size: percentage;*/
+    width:1920px;
+    height: 1000px;
+    top:0px;
+    left:0px;
+}
+.content02 .money .left.front {
+    display: block;
+    position: absolute;
+    width: 960px;
+    height: 1000px
+    left: -27px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.content02 .money .left.front img{
+    width: 80%;
+}
+
+.content02 .money .right.front {
+    display: block;
+    position: absolute;
+    width: 960px;
+    height: 1000px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.content02 .money .right.front img {
+    position: absolute;
+    width: 80%;
+    right: 0px;
+    bottom: 0px;
+}
+
+/*.content02 .money .left.back{
+    display:block;
+    position: absolute;
+    width: 200%;
+    left:0px;
+    bottom: 0px;
+
+}
+.content02 .money .right.front {
+    display:block;
+    position: absolute;
+    right:0px;
+    bottom: 0px;
+}
+
+.content02 .money .right.back {
+    display:block;
+    position: absolute;
+    right:0px;
+    top: 0px;
+}*/
+/*.content02 .coinbg img{
+    display: block;
+    position: absolute; 
+    width: 100%;*/
+/*    top:0px;
+    left:0px */;
+  /*  z-index: 1;*/
+
+
+}
