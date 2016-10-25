@@ -2,8 +2,12 @@
 <?=$temp['header_down']?>
 
 <head>
-	<script>
-	</script>
+  <script>
+    var options1 = {
+    id: 'fadein'
+    };
+    $('.fadein').initReveal(options1);
+  </script>
 <!-- 最新編譯和最佳化的 CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <!-- 選擇性佈景主題 -->
@@ -35,8 +39,9 @@
           <img src="img/index/content01/woman.png" >
         </div> 
       </div>
-      <div class="centerbox">
-        <h1><img src="img/index/content01/M.png" class="one">型社會變成<img src="img/index/content01/L.png" class="two">&nbsp&nbsp&nbsp型社會</h1>
+    <div class="centerbox">
+        <h1 class="fadein"><img src="img/index/content01/M.png" class="one">型社會變成<img src="img/index/content01/L.png" class="two">&nbsp&nbsp&nbsp型社會</h1>
+
         <div class="text one">
           <p>你</p><p>&nbsp</p><p>依</p><p>然</p><p>是</p><p>金</p><p>錢</p>
         <p>制</p><p>度</p><p>下</p></br>
@@ -45,11 +50,12 @@
           <p>無</p><p>法</p><p>翻</p><p>身</p><p>的</p><p>那</p><p>群</p>
           <p>人</p><p>嗎?</p>
         </div>
+    </div>
   <!-- headerbar -->
     <div class="header_center">
       <img src="img/index/content01/headerbar.png">
       <div class="nav">
-        <a href="#content01" class="li">
+        <a href="#content01" class="li one">
           <p>從這開始</p>
         </a>
         <a href="#content02" class="li">
@@ -70,21 +76,63 @@
       </div>
     </div>
 </div>
+
 <div class="content02">
-  <div class="moneybg">
-      <img src="img/index/content02/content02_bg1.png"></div>  
-  <div class="money">
-    <div class="left front">
-      <img src="img/index/content02/left_money.png"></div>
-<!--     <div class="left back">
-     <img src="img/index/content02/left_back.png"></div> -->
-    <div class="right front">
-     <img src="img/index/content02/right_money.png"></div>
-    <!-- <div class="right back">
-     <img src="img/index/content02/right_back.png"></div>
-  </div> -->
-<!--   <div class="coinbg">
-      <img src="img/index/content02/content02_bg2.png"></div>
-</div> -->
+  <div class="first">
+    <div class="moneybg">
+        <img src="img/index/content02/content02_bg1.png"></div>  
+    <div class="money">
+      <div class="left front">
+        <img src="img/index/content02/left_money_big.png"></div>
+      <div class="right front">
+       <img src="img/index/content02/rgiht_money_big.png"></div>
+    <div class="centerbox">
+      <div class="wordbox">
+        <p class="one">想要投資賺錢，卻不知道如何</p>
+        <p class="two">踏出第一步?</p>
+        <p class="three">你&nbsp是否犯了以下</p>  
+        <p class="four">投資大忌?</p>
+      </div>
+    </div>
+  </div>
 </div>
+<!--   <div class="second">
+    <div class="moneybg">
+      <img src="img/index/content02/content02_bg2.png"></div>
+    <div class="centerbox">
+      <div class="wordbox">
+        <div class="item one">
+          <h1>策<p>策略僵化</p></h1>
+          <img src="img/index/content02/item.png">
+        </div>
+        <div class="item two">
+          <p class="big">虧</p>
+          <p class="small">害怕虧損</p>
+          <img src="img/index/content02/item.png">
+        </div>
+        <div class="item three">
+            <h1>情<p>情緒操作</p></h1>
+          <img src="img/index/content02/item.png">
+        </div>
+        <div class="item four">
+          <h1>市<p>誤判市場</p></h1>
+          <img src="img/index/content02/item.png">
+        </div>
+        <div class="item five">
+          <h1>運<p>只靠運氣</p></h1>
+          <img src="img/index/content02/item.png">
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="middlebar">
+    <img src="img/index/content02/middle_bar.png">
+    <div class="title">
+      <span>
+        人人都享有致富&nbsp與&nbsp實踐夢想的權利
+      </span>
+    </div>
+  </div>
+</div>
+
 </body>

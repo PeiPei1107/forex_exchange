@@ -28,22 +28,27 @@
 {
     display: block;
     position: absolute;
+    display: flex;
+/*    align-items: center;*/
+    justify-content:center;
     width: 860px;
     left: 548px;
     height: 1080px;
     margin: 0 auto;
     top: 0px;
     /* overflow: hidden; */
+/*    background-color: black;*/
     z-index: 1;
-
 }
+
+
 .content01 .centerbox h1 {
     color: white;
     text-align: center;
     letter-spacing: 10px;
     position: absolute;
     padding-top: 165px;
-    padding-left: 212px;
+    padding-left: 150px;
     width: 100%;
     font-size: 30pt;
    font-family:"超研澤中特明";
@@ -52,14 +57,14 @@
 .content01 .centerbox h1 img.one {
     position: absolute;
     width: 20%;
-   left: 152px;
+   left: 122px;
     top: 166px;
 }
 
 .content01 .centerbox h1 img.two {
     position: absolute;
     width: 15%;
-    left: 515px;
+    left: 485px;
     top: 166px;
 }
 
@@ -80,16 +85,12 @@
 
 .content01 .centerbox .text.one {
     bottom: 386px;
-    left: 250px;
-    margin-left: 65px;
     line-height: 30px;
     position: absolute;
 }
 
 .content01 .centerbox .text.two {
     bottom: 325px;
-    left: 250px;
-    margin-left: 65px;
     line-height: 30px;
     position: absolute;
 }
@@ -138,73 +139,90 @@
     right: -30px;
     width: 400px;
 }
+
+
 .header_center {
     display: block;
-    position: relative;
-    width: 1383px;
-    height: 65px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    bottom: 0px;
+    left: 0px;
+    height:91px ;
     margin: 0 auto;
-    top: 1015px;
-    right: 548px;
-     z-index: 1; 
-/*    background-color: white;*/
-}
+    z-index: 1;
+    }
+
+
 .header_center img {
     position: absolute;
-    width: 140%;
-    height: 65px;
     left: 0px;
+    bottom: 0px;
+     z-index: -1;
+}
 
-/*     top: 500px; */
-    z-index: 1;
+
+
+.header_center .nav{
+    padding-left: 475px;
+    margin-bottom: 10px;
+    list-style: none;
 }
-.header_center .nav {
-    display: block;
-    position: absolute;
-    left: 150px;
-    /* width: 100%; */
-    /* text-align: center; */
-    margin-left: 479PX;
-    bottom: 11px;
-    z-index: 1;
-}
-.li{
-    font-size: 12pt;
-    font-family: "超研澤中特明";
-    margin-top: 10px;
-    color: #323333;
+
+a.li{
     float: left;
-    margin-left: 50px;
+    font-size: 14pt;
+    font-family: "超研澤中特明";
+    margin-left: 65px;
+    margin-top: 32px;
+    color: #323333;
+    letter-spacing: 3px;
+     z-index: 1;
 }
 /*----------------------------------content2-------------------------*/
 .content02 {
+    display: block;
     width: 100%;
-    height: 1000px;
+    height: 1164px;
     position: relative;
+
 }
 
+/*.content02 .first{   /*先暫時隱藏區塊
+    display: none;
+}*/
 
-.content02 .moneybg img{
+.content02 .moneybg. img{
     display:block;
     position: absolute;
-    /*background-size: percentage;*/
+    background-size: percentage;
     width:1920px;
     height: 1000px;
     top:0px;
     left:0px;
 }
+
+/*.content02 .first .moneybg img{
+   
+    display: none;
+}*/
+
 .content02 .money .left.front {
     display: block;
     position: absolute;
     width: 960px;
     height: 1000px
     left: -27px;
-    bottom: 0px;
+    bottom: 164px;
     z-index: 1;
 }
 
 .content02 .money .left.front img{
-    width: 80%;
+    position: absolute;
+    width: 88%;
+    left: 0px;
+    bottom: 0px;
 }
 
 .content02 .money .right.front {
@@ -213,45 +231,142 @@
     width: 960px;
     height: 1000px;
     right: 0px;
-    bottom: 0px;
+    bottom: 164px;
     z-index: 1;
 }
 
 .content02 .money .right.front img {
     position: absolute;
-    width: 80%;
+    width: 88%;
     right: 0px;
     bottom: 0px;
 }
 
-/*.content02 .money .left.back{
-    display:block;
-    position: absolute;
-    width: 200%;
-    left:0px;
-    bottom: 0px;
 
-}
-.content02 .money .right.front {
-    display:block;
+.content02 .centerbox 
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
     position: absolute;
-    right:0px;
-    bottom: 0px;
+    width: 550px;
+    height: 450px;
+    left: 696px;
+    top:280px;
+    z-index: 1;
+/*    background-color: black; */
+    text-align: center;
+    font-family: "超研澤中特明";
 }
 
-.content02 .money .right.back {
-    display:block;
-    position: absolute;
-    right:0px;
-    top: 0px;
-}*/
-/*.content02 .coinbg img{
+.content02 .wordbox p{
+
+    font-family: "超研澤中特明";
+    font-size: 24pt;
+    color: #4d5865;
+}
+
+.content02 .wordbox p.two{
+
+    line-height: 60pt;
+    font-size: 40pt;
+    color: #c8124e;
+}
+
+.content02 .wordbox p.three{
+
+    line-height: 80pt;
+}
+
+.content02 .wordbox p.four{
+    font-size: 40pt;
+    color: #c8124e;
+}
+
+.content02 .second .centerbox{
+
     display: block;
-    position: absolute; 
-    width: 100%;*/
-/*    top:0px;
-    left:0px */;
-  /*  z-index: 1;*/
+    position: absolute;
+/*    display: flex;*/
+    justify-content:center;
+    width: 860px;
+    left: 548px;
+    height: 1000px;
+    margin: 0 auto;
+    top: 0px;
+    z-index: 1;
+/*    background-color: black;*/
+
+}
+
+ 
 
 
+.content02 .second .centerbox .wordbox{
+
+    display: block;
+      position: absolute;
+      margin-top: 0px;
+      margin-left:126px ;
+  
+       
+       width: 600px;
+       height: 1000px;
+/*     background-color: white;*/
+
+}
+
+.content02 .second .item img{
+
+    width: 60%;
+    margin-top: 100px;
+}
+
+.content02 .second .item.one {
+
+    display: block;
+    position: absolute;
+    float: left;
+    width: 100%;
+    height: 150px;
+
+}
+
+.item.one h1 {
+    display: block;
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 221px;
+    font-size: 40pt;
+}
+
+
+.middlebar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    bottom: 0px;
+    left: 0px;
+    height:184px ;
+    width: 1920px;
+    z-index: 1;
+   /* background-color: black;*/
+}
+
+.middlebar img {
+    display: block;
+    position: absolute;
+    width:1920px;
+    height: 184px;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+.middlebar span{
+
+    letter-spacing: 6px;
+    font-size:30px;
+    font-family: "超研澤中特明";
+    color: #4d5865;
 }
