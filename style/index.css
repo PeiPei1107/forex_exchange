@@ -57,7 +57,7 @@
 .content01 .centerbox h1 img.one {
     position: absolute;
     width: 20%;
-   left: 122px;
+    left: 122px;
     top: 166px;
 }
 
@@ -149,6 +149,7 @@
     justify-content:center;
     bottom: 0px;
     left: 0px;
+    width: 1920px;
     height:91px ;
     margin: 0 auto;
     z-index: 1;
@@ -159,13 +160,15 @@
     position: absolute;
     left: 0px;
     bottom: 0px;
-     z-index: -1;
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
 }
 
 
 
-.header_center .nav{
-    padding-left: 475px;
+.header_center .nav {
+    margin: 0 auto;
     margin-bottom: 10px;
     list-style: none;
 }
@@ -320,6 +323,7 @@ a.li{
 .content02 .second .item.five { margin-top: 690px;}
 
 .content02 .second .item .left{
+
     display: flex;
     align-items: center;
     justify-content:center;
@@ -332,12 +336,13 @@ a.li{
 
 .content02 .second .item .right {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     position: absolute;
-    right: 25px;
-    float: left;
+    right: 29px;
+    /* float: left; */
     width: 70%;
+    top: 0px;
     height: 100%;
 }
 
@@ -355,7 +360,7 @@ a.li{
 .content02 .second .item p.text-right {
     position: absolute;
     font-size: 20pt;
-    top: 40px;
+    top: 37px;
     left: 103px;
 }
 
@@ -395,7 +400,44 @@ a.li{
 .middlebar span{
 
     letter-spacing: 6px;
-    font-size:30px;
+    font-size:35px;
     font-family: "超研澤中特明";
     color: #4d5865;
 }
+
+
+/*content03*/
+
+/*.content03{
+    
+    display: block;
+    position: relative;
+    width: 1920px;
+    height: 1164px;
+    margin-top: 0 auto;
+}
+
+.content03 .triangle{
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 768px;
+}
+
+.content03 .block{
+
+    display: block;
+    position: absolute;
+    margin-top: 2px;
+
+}
+
+.content03 .block img.bg{
+
+     position: absolute;
+     margin: 0 auto;
+     width: 100%;
+
+
+}*/
