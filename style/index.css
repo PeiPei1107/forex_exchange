@@ -188,12 +188,12 @@ a.li{
     position: relative;
 
 }
-
-/*.content02 .first{   /*先暫時隱藏區塊
+/*鈔票背景*//*先暫時隱藏區塊-測試用*/
+/*.content02 .first{   
     display: none;
 }*/
 
-.content02 .moneybg. img{
+.content02 .moneybg img{
     display:block;
     position: absolute;
     background-size: percentage;
@@ -203,10 +203,6 @@ a.li{
     left:0px;
 }
 
-/*.content02 .first .moneybg img{
-   
-    display: none;
-}*/
 
 .content02 .money .left.front {
     display: block;
@@ -259,11 +255,14 @@ a.li{
     font-family: "超研澤中特明";
 }
 
+
+
 .content02 .wordbox p{
 
     font-family: "超研澤中特明";
     font-size: 24pt;
     color: #4d5865;
+    letter-spacing: 5px;
 }
 
 .content02 .wordbox p.two{
@@ -283,64 +282,93 @@ a.li{
     color: #c8124e;
 }
 
-.content02 .second .centerbox{
+/* 被鈔票bg蓋住的coinbg區塊-second*/
 
+.content02 .moneybg.two img{
+    z-index: -1
+}
+
+.content02 .second .wordbox {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: absolute;
+    width: 660px;
+    height: 1000px;
+    top: 0px;
+    left: 640px;
+    z-index: -1;
+}
+
+/*統一定義second_item*/
+.content02 .second .item {
     display: block;
     position: absolute;
-/*    display: flex;*/
+    width: 594px;
+    height: 130px;
+    margin-left: 33px;
+}
+
+.content02 .second .item.one {margin-top: 170px;}
+
+.content02 .second .item.two { margin-top: 300px;}
+
+.content02 .second .item.three {margin-top: 430px;}
+
+.content02 .second .item.four { margin-top: 560px;}
+
+.content02 .second .item.five { margin-top: 690px;}
+
+.content02 .second .item .left{
+    display: flex;
+    align-items: center;
     justify-content:center;
-    width: 860px;
-    left: 548px;
-    height: 1000px;
-    margin: 0 auto;
-    top: 0px;
-    z-index: 1;
-/*    background-color: black;*/
-
-}
-
- 
-
-
-.content02 .second .centerbox .wordbox{
-
-    display: block;
-      position: absolute;
-      margin-top: 0px;
-      margin-left:126px ;
-  
-       
-       width: 600px;
-       height: 1000px;
-/*     background-color: white;*/
-
-}
-
-.content02 .second .item img{
-
-    width: 60%;
-    margin-top: 100px;
-}
-
-.content02 .second .item.one {
-
-    display: block;
     position: absolute;
     float: left;
-    width: 100%;
-    height: 150px;
-
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
 }
 
-.item.one h1 {
-    display: block;
+.content02 .second .item .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    margin-left: 55px;
-    margin-top: 221px;
+    right: 25px;
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+.content02 .second .item p{
+
+    color: white;
+    letter-spacing: 3px;
+}
+
+.content02 .second .item p.text-left {
+    
     font-size: 40pt;
 }
 
+.content02 .second .item p.text-right {
+    position: absolute;
+    font-size: 20pt;
+    top: 40px;
+    left: 103px;
+}
 
+.content02 .second .item img {
+    display: block;
+    position: absolute;
+    margin-left: 151px;
+    margin-top: 3px;
+    width: 50%;
+    z-index: -1;
+}
+
+/*content02_title*/
 .middlebar {
     position: absolute;
     display: flex;
@@ -363,6 +391,7 @@ a.li{
     bottom: 0px;
     z-index: -1;
 }
+
 .middlebar span{
 
     letter-spacing: 6px;

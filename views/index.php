@@ -79,7 +79,7 @@
 
 <div class="content02">
   <div class="first">
-    <div class="moneybg">
+    <div class="moneybg one">
         <img src="img/index/content02/content02_bg1.png"></div>  
     <div class="money">
       <div class="left front">
@@ -96,35 +96,38 @@
     </div>
   </div>
 </div>
-<!--   <div class="second">
-    <div class="moneybg">
-      <img src="img/index/content02/content02_bg2.png"></div>
-    <div class="centerbox">
+  <div class="second">
+    <div class="moneybg two">
+      <img src="img/index/content02/content02_bg2.png"></div>   
       <div class="wordbox">
         <div class="item one">
-          <h1>策<p>策略僵化</p></h1>
-          <img src="img/index/content02/item.png">
+            <div class="left"><p class="text-left">策</p></div>
+            <div class="right"><p class="text-right">策略僵化</p></div>   
+          <img src="img/index/content02/item_black.png">
         </div>
         <div class="item two">
-          <p class="big">虧</p>
-          <p class="small">害怕虧損</p>
-          <img src="img/index/content02/item.png">
-        </div>
+            <div class="left"><p class="text-left">虧</p></div>
+            <div class="right"><p class="text-right">害怕虧損</p></div>     
+          <img src="img/index/content02/item_red.png">
+        </div> 
         <div class="item three">
-            <h1>情<p>情緒操作</p></h1>
-          <img src="img/index/content02/item.png">
-        </div>
+            <div class="left"><p class="text-left">情</p></div>
+            <div class="right"><p class="text-right">情緒操作</p></div>      
+          <img src="img/index/content02/item_black.png">
+        </div>  
         <div class="item four">
-          <h1>市<p>誤判市場</p></h1>
-          <img src="img/index/content02/item.png">
-        </div>
+            <div class="left"><p class="text-left">市</p></div>
+            <div class="right"><p class="text-right">誤判市場</p></div>      
+          <img src="img/index/content02/item_red.png">
+        </div> 
         <div class="item five">
-          <h1>運<p>只靠運氣</p></h1>
-          <img src="img/index/content02/item.png">
-        </div>
+            <div class="left"><p class="text-left">運</p></div>
+            <div class="right"><p class="text-right">只靠運氣</p></div>     
+          <img src="img/index/content02/item_black.png">
+        </div> 
       </div>
-    </div>
-  </div> -->
+    
+  </div>
   <div class="middlebar">
     <img src="img/index/content02/middle_bar.png">
     <div class="title">
@@ -136,3 +139,4 @@
 </div>
 
 </body>
+
