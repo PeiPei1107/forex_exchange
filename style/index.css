@@ -9,8 +9,7 @@
   font-family:"超研澤中特明";
   src:url(img/font/bffc3d1cefb8031614b6ea315738297c.ttf) format("truetype");
 }
-
-
+body { width:100%; overflow-y:scroll; }
 .content01{
     display: block;
     position: relative;
@@ -242,18 +241,20 @@ a.li{
 }
 
 
-.content02 .centerbox 
-{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    position: absolute;
+.content02 .centerbox {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: relative;
     width: 550px;
-    height: 450px;
-    left: 696px;
-    top:280px;
+    margin: 0 auto;
+    padding: 10% 0;
+    /* overflow: hidden; */
+    /* height: 450px; */
+    /* left: 696px; */
+    /* top: 280px; */
     z-index: 1;
-/*    background-color: black; */
+    /* background-color: black; */
     text-align: center;
     font-family: "超研澤中特明";
 }
@@ -408,36 +409,169 @@ a.li{
 
 /*content03*/
 
-/*.content03{
+.content03{
     
     display: block;
     position: relative;
-    width: 1920px;
-    height: 1164px;
-    margin-top: 0 auto;
+    margin: 0 auto;
+    width: 100%;
+    height: 1084px;
 }
 
-.content03 .triangle{
-    z-index: 1;
+.content03 .rightbox {
+    
     position: absolute;
     top: 0px;
     right: 0px;
-    height: 768px;
+    height: 100%;
+    width: 769px;
+    z-index: 1;
+}
+.content03 .rightbox img.triangle{
+
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100% ;
+    right: 0px;
+    
+}
+
+.content03 .rightbox .wordbox{
+
+    display: block;
+    position: absolute;
+    width: 500px;
+    height:450px;
+    right: 60px;
+    margin-top: 390px;
+    }
+
+ .content03 .rightbox .wordbox .word  {
+    
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    color: #4d5865;
+    font-size: 25pt;
+    line-height: 70px;
+    letter-spacing:2px ;
+ }
+
+.content03 .rightbox .wordbox .word p {
+    
+    padding-top: 83px;
+}
+
+.content03 .rightbox .wordbox .pic {
+    position: absolute;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    bottom: 0px;
+}
+.content03 .rightbox .wordbox .pic img.plane {
+    display: block;
+    position: absolute;
+    width: 30%;
+    margin-left: 20px;
+    margin-top: -6px;
 }
 
 .content03 .block{
 
     display: block;
-    position: absolute;
-    margin-top: 2px;
+    position: relative;
+    top: 0px;
+    width: 1920px;
+    height: 1084px;
+    z-index: -1;
+}
 
+.content03 .block .top{
+
+    display: block;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 30%;
+}
+
+.content03 .block .middle{
+
+    margin-top: 362px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+ }
+
+.content03 .block .bottom{
+    margin-top: 723px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
 }
 
 .content03 .block img.bg{
 
-     position: absolute;
-     margin: 0 auto;
-     width: 100%;
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content03 .block .title {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    font-size: 40pt;
+    font-family: "超研澤中特明";
+    color: white;
+    letter-spacing: 3px;
+}
+
+.content03 .block .top .title{padding-left: 60%;}
+
+.content03 .block .title span{ padding-top: 148px;}
+
+.content03 .block .middle .title{padding-left:40%;}
 
 
-}*/
+.content03 .block .bottom .title{
+
+    padding-left:20% ;
+    color: #4d5865;
+}
+
+
+.content03 .block .text{
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-size: 23pt;
+    color: white;
+    height: 100%;
+
+    letter-spacing: 3px;
+    padding-left: 20%;
+    line-height: 45px;
+}
+
+.content03 .block .text p{
+    padding-top: 110px;
+}
+
+.content03 .block .middle .text p{
+    padding-left:40%;
+}
+.content03 .block .bottom .text p{
+    padding-top: 135px;
+}
