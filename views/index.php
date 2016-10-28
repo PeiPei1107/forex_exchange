@@ -160,10 +160,10 @@
         </div>
         <div class="text">
           <p>每個月領固定薪水，<br>
-            工作多年存款少的可憐<br>
-            難道永遠只能當小資女孩、小資男孩。</p>
+             工作多年存款少的可憐<br>
+             難道永遠只能當小資女孩、小資男孩。</p>
         </div>
-        </div>
+      </div>
     </div>
     <div class="middle">
       <img src="img/index/content03/Young_bg.jpg" class="bg">
@@ -188,7 +188,7 @@
         </div>
         <div class="text">
           <p>企業邁入成長期，需要大量資金支撐，<br>
-              讓企業繼續茁壯。
+             讓企業繼續茁壯。
           </p>
         </div>
       </div>

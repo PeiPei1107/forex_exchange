@@ -498,7 +498,7 @@ a.li{
     position: absolute;
     top: 0px;
     width: 100%;
-    height: 30%;
+    height: 33%;
 }
 
 .content03 .block .middle{
@@ -507,7 +507,7 @@ a.li{
     display: block;
     position: absolute;
     width: 100%;
-    height: 30%;
+    height: 33%;
  }
 
 .content03 .block .bottom{
@@ -515,7 +515,7 @@ a.li{
     display: block;
     position: absolute;
     width: 100%;
-    height: 30%;
+    height: 33%;
 }
 
 .content03 .block img.bg{
@@ -526,27 +526,47 @@ a.li{
     width: 100%;
 }
 
-.content03 .block .title {
+
+.content03 .block .word {
+    display: block;
+    position: relative;
+    width: 60%;
+    height: 100%;
+    margin-left: 266px;
+    /* background-color: white; */
+}
+
+.content03 .block .word .title {
+
     display: flex;
     justify-content: center;
     position: absolute;
     height: 100%;
+    width: 100%;
     font-size: 40pt;
-    font-family: "超研澤中特明";
     color: white;
     letter-spacing: 3px;
+    /*background-color: white;*/
 }
 
-.content03 .block .top .title{padding-left: 60%;}
+.content03 .block .word .title span{
+    display: block;
+    width: 100%;
+    padding-top: 12.5%;
+}
 
-.content03 .block .title span{ padding-top: 148px;}
+.content03 .block .top .word .title span {
+    
+    text-align: right; 
+}
 
-.content03 .block .middle .title{padding-left:40%;}
+
+.content03 .block .middle .title span {padding-left: 42%;}
 
 
-.content03 .block .bottom .title{
+.content03 .block .bottom .title span{
 
-    padding-left:20% ;
+    padding-left:15% ;
     color: #4d5865;
 }
 
@@ -556,22 +576,25 @@ a.li{
     display: flex;
     justify-content: center;
     position: absolute;
-    font-size: 23pt;
-    color: white;
     height: 100%;
-
+    width: 100%;
+    font-size: 25pt;
+    color: white;
     letter-spacing: 3px;
-    padding-left: 20%;
-    line-height: 45px;
+    /*background-color: blue;*/
 }
 
 .content03 .block .text p{
-    padding-top: 110px;
+    display: block;
+    width: 100%;
+    padding-top: 10%;
 }
 
 .content03 .block .middle .text p{
-    padding-left:40%;
+    padding-left:35%;
+
 }
 .content03 .block .bottom .text p{
-    padding-top: 135px;
+
+    padding-top: 12.5%;
 }
