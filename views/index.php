@@ -136,14 +136,38 @@
       </div>
     </div>
 </div>
-  <!-- content03 -->  
+<!-- content03 -->  
   <div class="content03" id="content03">
     <div class="rightbox">
-      <img src="img/index/content03/triangle.png" class="triangle">     
+      <img src="img/index/content03/triangle_one.png" class="triangle one">
+      <!-- <img src="img/index/content03/triangle_two.png" class="triangle two"> -->
+      <img src="img/index/content03/triangle_three.png" class="triangle three">
+      <!-- <img src="img/index/content03/triangle_four.png" class="triangle four"> -->
       <div class="wordbox">
-        <div class="word">
+        <div class="text one">
           <p>別讓你的夢想被金錢束縛！<br>
-          想想自己是否有這些夢想？</p>
+             想想自己是否有這些夢想？</p>
+        </div>
+        <div class="text two">
+          <ul>
+            <li>．想存到第一桶金</li>
+            <li>．想擁有幸福溫暖的房屋</li>
+            <li>．想出國旅遊、留學</li>
+          </ul> 
+        </div>
+        <div class="text three">
+          <ul>
+            <li>．想創業當老闆</li>
+            <li>．想擁有自己的店</li>
+            <li>．想闖出自己的品牌</li>
+          </ul>
+        </div>
+        <div class="text four">
+          <ul>
+            <li>．想擴大公司規模</li>
+            <li>．想拓展海外版圖</li>
+            <li>．想網羅更多人才</li>
+          </ul>
         </div>
         <div class="pic">
         <img src="img/index/content03/plane.png" class="plane">

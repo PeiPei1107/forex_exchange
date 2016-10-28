@@ -170,6 +170,7 @@ body { width:100%; overflow-y:scroll; }
     margin: 0 auto;
     margin-bottom: 10px;
     list-style: none;
+
 }
 
 a.li{
@@ -418,6 +419,7 @@ a.li{
     height: 1084px;
 }
 
+/*content03 右邊三角形區塊*/
 .content03 .rightbox {
     
     position: absolute;
@@ -434,8 +436,15 @@ a.li{
     width: 100%;
     height: 100% ;
     right: 0px;
-    
+    /*display: none;*/
 }
+
+
+/*.content03 .rightbox img.triangle.one{
+
+    display: none;
+}*/
+
 
 .content03 .rightbox .wordbox{
 
@@ -447,23 +456,45 @@ a.li{
     margin-top: 390px;
     }
 
- .content03 .rightbox .wordbox .word  {
+ .content03 .rightbox .wordbox .text {
     
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     width: 100%;
-    height: 50%;
-    color: #4d5865;
+    height: 50%;  
     font-size: 25pt;
-    line-height: 70px;
     letter-spacing:2px ;
  }
 
-.content03 .rightbox .wordbox .word p {
+.content03 .rightbox .wordbox .text ul {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 13%;
+    color: #231815;
+}/*#663300*/
+
+  .content03 .rightbox .wordbox .text li{
     
-    padding-top: 83px;
+    display: block;
+    margin-top: 2%;
+    z-index: 3;
+ }
+
+.content03 .rightbox .wordbox .text.one{
+
+     color: #4d5865;
+     line-height: 70px;
+     display: none;
 }
+
+.content03 .rightbox .wordbox .text.two {display: none;}
+
+.content03 .rightbox .wordbox .text.three {display: none;}
+
+/*.content03 .rightbox .wordbox .text.four {display: none;}*/
+
+.content03 .rightbox .wordbox .text.one p {padding-top: 83px;}
 
 .content03 .rightbox .wordbox .pic {
     position: absolute;
@@ -480,8 +511,10 @@ a.li{
     width: 30%;
     margin-left: 20px;
     margin-top: -6px;
+    display: none; /*test*/
 }
 
+/*content03 長條三個區塊*/
 .content03 .block{
 
     display: block;
@@ -526,7 +559,6 @@ a.li{
     width: 100%;
 }
 
-
 .content03 .block .word {
     display: block;
     position: relative;
@@ -555,18 +587,10 @@ a.li{
     padding-top: 12.5%;
 }
 
-.content03 .block .top .word .title span {
-    
-    text-align: right; 
-}
-
-
+.content03 .block .top .word .title span {text-align: right; }
 .content03 .block .middle .title span {padding-left: 42%;}
-
-
 .content03 .block .bottom .title span{
-
-    padding-left:15% ;
+    padding-left:15%;
     color: #4d5865;
 }
 
@@ -590,11 +614,16 @@ a.li{
     padding-top: 10%;
 }
 
-.content03 .block .middle .text p{
-    padding-left:35%;
+.content03 .block .middle .text p{padding-left:35%;}
+.content03 .block .bottom .text p{padding-top: 12.5%;}
 
-}
-.content03 .block .bottom .text p{
+/*隱藏部分區塊*/
 
-    padding-top: 12.5%;
-}
+.content03 .block .top img.bg.one{display: none;}
+/*.content03 .block .middle img.bg.one{display: none;}*/
+.content03 .block .bottom img.bg.one{display: none;}
+/*.content03 .block .top .word .title{display: none;}*/
+.content03 .block .middle .word .title{display: none;}
+.content03 .block .top .word .text{display: none;}
+/*.content03 .block .middle .word .text{display: none;}*/
+.content03 .block .bottom .word .text{display: none;}
