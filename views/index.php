@@ -220,5 +220,119 @@
   </div>
 </div>
 
+<!-- content04 致富機會 & 四大保證-->  
+  <div class="content04">
+    <div class="colorbg">
+      <img src="img/index/content04/strategy_bg.jpg">     
+    </div>
+    <div class="leftbox">
+      <div class="picbox">
+        <img src="img/index/content04/pen.png" class="one">
+        <img src="img/index/content04/black_bg.png" class="two">
+        <img src="img/index/content04/brown_bg.png" class="three">
+      </div>
+      <div class="wordbox">
+        <div class="title">
+          <span>外匯操作系統：</span><br>
+          <span>四大優點，免費擁有。</span>
+        </div>
+        <div class="text">
+          <img src="img/index/content04/line.png">
+          <div class="one">
+          <h1>使用自動化獲利系統</h1>
+          <p>每月獲利10%-20%，<br>
+             投資報酬率遠高於市面上<br>
+             高風險的投資工具。</p>
+          </div>
+          <div class="two">
+          <h1>完全免費提供</h1>
+          <p>多年研發的自動化獲利系統，<br>
+             不收任何系統費用，<br>
+             翻轉人生零門檻。</p>
+          </div>
+          <div class="three">
+          <h1>系統介面操作人性化</h1>
+          <p>一小時的講座掌握操作手法，<br>
+             開始獲利</p>
+          </div>
+          <div class="four">
+          <h1>24小時監控智慧監控</h1>
+          <p>每月獲利10%-20%，<br>
+             投資報酬率遠高於市面上<br>
+             高風險的投資工具。</p>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="topbox">
+      <div class="wordbox">
+      <span>給自己一小時！<br>
+            我們教你一輩子適用的賺錢術！
+      </span>
+    </div>
+    </div>
+    <div class="rightbox">
+      <div class="wordbox">
+        <div class="title">
+          <div class="word">
+          <p>用勞力賺來的死薪水<br>
+             永遠比不上有錢人用錢滾錢</p>
+           </div>
+          <div class="line">
+          <img src="img/index/content04/line2.png">
+          </div>
+        </div>
+        <div class="text">
+          <p>我們經過多年數據回測後再模擬測試，<br>
+             找到有錢人不敢告訴你的致勝公式！<br>
+             讓我們一窺有錢人的致富秘訣，<br>
+             只要投入&nbsp小額資本&nbsp，就能&nbsp創造超高收益<br>
+             讓你迅速回本無負擔，<br>
+             輕鬆翻轉人生。
+          </p>
+          
+        </div>
+      </div>
+      <div class="iconbox">
+        <div class="item one">
+          <div class="icon">
+            <img src="img/index/content04/money_icon.png">
+            <img src="img/index/content04/money_icon2.png">
+          </div>
+          <div class="word">
+            <p>高額獲利</p>
+          </div>
+        </div>
+        <div class="item two">
+          <div class="icon">
+            <img src="img/index/content04/use_icon.png">
+            <img src="img/index/content04/use_icon2.png">
+          </div>
+          <div class="word">
+            <p>操作人性</p>
+          </div>
+        </div>
+        <div class="item three">
+          <div class="icon">
+            <img src="img/index/content04/system_icon.png">
+            <img src="img/index/content04/system_icon2.png">
+          </div>
+          <div class="word">
+            <p>免費系統</p>
+          </div>
+        </div>
+        <div class="item four">
+          <div class="icon">
+            <img src="img/index/content04/wisdom_icon.png">
+            <img src="img/index/content04/wisdom_icon2.png">
+          </div>
+          <div class="word">
+            <p>智慧下單</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 

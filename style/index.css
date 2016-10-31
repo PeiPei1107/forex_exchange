@@ -627,3 +627,251 @@ a.li{
 .content03 .block .top .word .text{display: none;}
 /*.content03 .block .middle .word .text{display: none;}*/
 .content03 .block .bottom .word .text{display: none;}
+
+
+/*content04*/
+
+.content04{
+    
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 1084px;
+}
+.content04 .colorbg {
+    display: block;
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.content04 .leftbox{
+    display: block;
+    position: absolute;
+    width:1304.5px ;
+    height:1084px ;
+    left: 0px;
+    top:0px;
+    /*background-color: black;*/
+    z-index: 1;
+}
+
+.content04 .leftbox .picbox img{
+    display: block;
+    position: absolute;
+    left: 0px;
+    top:0px;
+}
+
+.content04 .leftbox .picbox img.one{  
+    /*pen有從螢幕外滑入的動畫(滑鼠滾輪滑動)*/
+    position: absolute;
+    width: 50%;
+    left:0px;
+    animation:move_left 3.2s;
+    -webkit-animation:move_left 3.2s;
+}
+
+@keyframes move_left{
+    0%{opacity:0;left:-50%;}
+    50%{opacity:0;left:-20%;}
+    100% {opacity:1;left:0%;}
+}
+@-webkit-keyframes move_left{
+    0%{opacity:0;left:-50%;}
+    50%{opacity:0;left:-20%;}
+    100% {opacity:1;left:0%;}
+}
+
+
+
+.content04 .leftbox .picbox img.two{
+    display: none;
+}
+
+.content04 .leftbox .picbox img.three{
+    display: none;
+}
+
+.content04 .leftbox .wordbox{
+    display: none;
+}
+
+.content04 .rightbox .iconbox{
+    display: none;
+}
+
+.content04 .topbox{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 25%;
+    /*background-color: black;*/
+    z-index: 1;
+}
+
+.content04 .topbox .wordbox{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    /*background-color: yellow;*/
+    margin-left: 20%;
+    bottom: 0px;
+}
+.content04 .topbox .wordbox span {
+    display: block;
+    font-size: 30pt;
+    color: white;
+    padding-left: 10%;
+    padding-top: 12%;
+    font-style: italic;
+    /* position: absolute; */
+    animation:move_left_span 2.5s;
+    -webkit-animation:move_left_span 2.5s;
+}
+
+@keyframes move_left_span{
+    0%{opacity:0;padding-left:-5%;}
+    50%{opacity:0;padding-left:5%;}
+    100% {opacity:1;padding-left:10%;}
+}
+@-webkit-keyframes move_left_span{
+   0%{opacity:0;padding-left:-5%;}
+    50%{opacity:0;padding-left:5%;}
+    100% {opacity:1;padding-left:10%;}
+}
+
+.content04 .rightbox {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width:60%;
+    height: 100%;
+    /*background-color: black;*/
+    z-index: 1;
+}
+
+.content04 .rightbox .wordbox {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    left: 0%;
+    top: 45%;
+    /*background-color: yellow;*/
+}
+
+.content04 .rightbox .wordbox .title{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+/*    background-color: white;*/
+}
+
+.content04 .rightbox .wordbox .title .word{
+    display: block;
+    position: absolute;
+    width:100%;
+    height: 60%;
+    top: 0%;
+    left: 0%;
+    /*background-color: black;*/
+    
+}
+
+.content04 .rightbox .wordbox .title .word p{
+    top:0%;
+    margin-left: 0%;
+    font-size: 20pt;
+    font-weight: 1px;
+    color:#2f2b28 ;
+    font-weight: 3px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    animation:move_left_title 3.5s;
+    -webkit-animation:move_left_title 3.5s;
+}
+.content04 .rightbox .wordbox .title .line {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+ /*   background-color: red;*/
+    bottom: 0%;
+    left: 0%;
+}
+.content04 .rightbox .wordbox .title .line img{
+    display: block;
+    position: absolute;
+    width: 50%;
+    animation:opa 3.5s;
+    -webkit-animation:opa 3.5s;
+}
+
+@keyframes opa{
+    0%{opacity:0;}
+    50%{opacity:0;}
+    100% {opacity:1;}
+}
+
+.content04 .rightbox .wordbox .text{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    top:25%;
+    left:0%;
+    /*background-color: white;*/
+}
+
+.content04 .rightbox .wordbox .text p {
+    display: block;
+    top: 25%;
+    margin-left: 3%;
+    color: #505459;
+    font-size: 15pt;
+    line-height: 40px;
+    letter-spacing: 3px;
+    animation:move_left_p 3.5s;
+    -webkit-animation:move_left_p 3.5s;
+}
+
+
+@keyframes move_left_title{
+    0%{opacity:0;margin-left: -10%;}
+    50%{opacity:0;margin-left:-3%;}
+    100% {opacity:1;margin-left:0%;}
+}
+@-webkit-keyframes move_left_title{
+    0%{opacity:0;margin-left: -10%;}
+    50%{opacity:0;margin-left:-3%;}
+    100% {opacity:1;margin-left:0%;}
+}
+
+@keyframes move_left_p{
+    0%{opacity:0;margin-left: -5%;}
+    50%{opacity:0;margin-left:-0%;}
+    100% {opacity:1;margin-left:3%;}
+}
+@-webkit-keyframes move_left_p{
+    0%{opacity:0;margin-left: -5%;}
+    50%{opacity:0;margin-left:-0%;}
+    100% {opacity:1;margin-left:3%;}
+}
+
+
+
+/*四大保證區塊*/
+
+
