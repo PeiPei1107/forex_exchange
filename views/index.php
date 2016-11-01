@@ -233,30 +233,34 @@
       </div>
       <div class="wordbox">
         <div class="title">
-          <span>外匯操作系統：</span><br>
-          <span>四大優點，免費擁有。</span>
+          <h1>外匯操作系統：</br>
+          四大優點，免費擁有。</h1>
         </div>
         <div class="text">
           <img src="img/index/content04/line.png">
           <div class="one">
-          <h1>使用自動化獲利系統</h1>
-          <p>每月獲利10%-20%，<br>
-             投資報酬率遠高於市面上<br>
-             高風險的投資工具。</p>
+            <div class="bigfont">
+              <span>使用自動化獲利系統</span>
+            </div>
+            <div class="smallfont">
+              <p>每月獲利10%-20%，<br>
+                 投資報酬率遠高於市面上<br>
+                 高風險的投資工具。</p>
+            </div>
           </div>
           <div class="two">
-          <h1>完全免費提供</h1>
+          <span>完全免費提供</span>
           <p>多年研發的自動化獲利系統，<br>
              不收任何系統費用，<br>
              翻轉人生零門檻。</p>
           </div>
           <div class="three">
-          <h1>系統介面操作人性化</h1>
+          <span>系統介面操作人性化</span>
           <p>一小時的講座掌握操作手法，<br>
              開始獲利</p>
           </div>
           <div class="four">
-          <h1>24小時監控智慧監控</h1>
+          <span>24小時監控智慧監控</span>
           <p>每月獲利10%-20%，<br>
              投資報酬率遠高於市面上<br>
              高風險的投資工具。</p>
@@ -289,15 +293,17 @@
              只要投入&nbsp小額資本&nbsp，就能&nbsp創造超高收益<br>
              讓你迅速回本無負擔，<br>
              輕鬆翻轉人生。
-          </p>
-          
+          </p>          
+        </div>
+        <div class="pic">
+          <img src="img/index/content04/change.png">
         </div>
       </div>
       <div class="iconbox">
         <div class="item one">
           <div class="icon">
-            <img src="img/index/content04/money_icon.png">
-            <img src="img/index/content04/money_icon2.png">
+            <img src="img/index/content04/money_icon.png" class="one">
+            <img src="img/index/content04/money_icon2.png" class="two">
           </div>
           <div class="word">
             <p>高額獲利</p>
@@ -305,8 +311,8 @@
         </div>
         <div class="item two">
           <div class="icon">
-            <img src="img/index/content04/use_icon.png">
-            <img src="img/index/content04/use_icon2.png">
+            <img src="img/index/content04/use_icon.png" class="one">
+            <img src="img/index/content04/use_icon2.png" class="two">
           </div>
           <div class="word">
             <p>操作人性</p>
@@ -314,8 +320,8 @@
         </div>
         <div class="item three">
           <div class="icon">
-            <img src="img/index/content04/system_icon.png">
-            <img src="img/index/content04/system_icon2.png">
+            <img src="img/index/content04/system_icon.png" class="one">
+            <img src="img/index/content04/system_icon2.png" class="two">
           </div>
           <div class="word">
             <p>免費系統</p>
@@ -323,8 +329,8 @@
         </div>
         <div class="item four">
           <div class="icon">
-            <img src="img/index/content04/wisdom_icon.png">
-            <img src="img/index/content04/wisdom_icon2.png">
+            <img src="img/index/content04/wisdom_icon.png" class="one">
+            <img src="img/index/content04/wisdom_icon2.png" class="two">
           </div>
           <div class="word">
             <p>智慧下單</p>

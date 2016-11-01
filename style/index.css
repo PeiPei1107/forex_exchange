@@ -635,9 +635,13 @@ a.li{
     
     display: block;
     position: relative;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     width: 100%;
     height: 1084px;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .content04 .colorbg {
     display: block;
@@ -647,17 +651,27 @@ a.li{
     top: 0px;
     left: 0px;
     z-index: 1;
+    background-position: fixed;
 }
-
-.content04 .leftbox{
+/*leftbox設定*/
+.content04 .leftbox{   
     display: block;
     position: absolute;
     width:1304.5px ;
-    height:1084px ;
+    height:100% ;
     left: 0px;
     top:0px;
-    /*background-color: black;*/
+    /*background-color: white;*/
     z-index: 1;
+}
+
+.content04 .leftbox .picbox{
+
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background-color: black;*/
 }
 
 .content04 .leftbox .picbox img{
@@ -687,23 +701,6 @@ a.li{
     100% {opacity:1;left:0%;}
 }
 
-
-
-.content04 .leftbox .picbox img.two{
-    display: none;
-}
-
-.content04 .leftbox .picbox img.three{
-    display: none;
-}
-
-.content04 .leftbox .wordbox{
-    display: none;
-}
-
-.content04 .rightbox .iconbox{
-    display: none;
-}
 
 .content04 .topbox{
     display: block;
@@ -750,6 +747,7 @@ a.li{
     100% {opacity:1;padding-left:10%;}
 }
 
+/*rightbox設定*/
 .content04 .rightbox {
     display: block;
     position: absolute;
@@ -757,7 +755,7 @@ a.li{
     top: 0px;
     width:60%;
     height: 100%;
-    /*background-color: black;*/
+    background-color: yellow;
     z-index: 1;
 }
 
@@ -870,8 +868,140 @@ a.li{
     100% {opacity:1;margin-left:3%;}
 }
 
+.content04 .rightbox .wordbox .pic {
+    display: block;
+    position: absolute;
+    width: 55%;
+    height: 40%;
+    /* bottom: -2%; */
+    top: 57%;
+    left: 26%;
+    /* background-color: white; */
+}
+.content04 .rightbox .wordbox .pic img{
+    display: block;
+    position: absolute;
+    width: 70%;
+}
+
+.content04 .leftbox .picbox img.one{
+    display: none;
+}
+
+.content04 .topbox{
+    display: none;
+}
+
+.content04 .rightbox .wordbox{
+    display: none;
+}
+
 
 
 /*四大保證區塊*/
+
+.content04 .rightbox .iconbox{
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 30%;
+    top: 47%;
+    left: 5%;
+    background-color: red;
+    z-index: 1;
+}
+
+
+.content04 .leftbox .picbox img.two{
+
+    height:100%;
+    overflow: hidden;
+}
+
+.content04 .leftbox .picbox img.three{
+
+    height:100%;
+    overflow: hidden;
+}
+
+.content04 .leftbox .wordbox{
+
+    /*display: none;*/
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 65%;
+    left: 3%;
+    top: 25%;
+    /*background-color:white;*/
+}
+
+.content04 .leftbox .wordbox .title{
+
+    /*display: none;*/
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    left: 0%;
+    top: 10%;
+    /*background-color:black;*/
+
+}
+
+.content04 .leftbox .wordbox .title h1{
+
+    font-size: 40pt;
+    color: #dfccc4;
+    margin-top: 0%;
+    line-height: 70px;
+
+}
+
+.content04 .leftbox .wordbox .text{
+
+    /*display: none;*/
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    left: 0%;
+    bottom: 0%;
+    background-color:black;
+    overflow: hidden;
+    color:white;
+
+}
+
+.content04 .leftbox .wordbox .text img{
+
+    display: block;
+    position: absolute;
+    margin-top: 16%;
+    
+}
+
+.content04 .leftbox .wordbox .text .bigfont{
+
+    display: block;
+    position: absolute;
+    width: 100%;
+    height:25% ;
+    font-size: 25pt;
+}
+
+.content04 .leftbox .wordbox .text .smallfont{
+
+    font-size: 20pt;
+    display: block;
+
+}
+
+.content04 .rightbox .iconbox img.two{
+
+    display: none;
+
+}
+
 
 
