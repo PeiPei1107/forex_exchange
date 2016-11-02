@@ -1099,13 +1099,13 @@ a.li{
     
 }
 
-.content05 .leftbox .location{
+.content05 .leftbox .location {
     display: block;
     position: relative;
     width: 45%;
-    height:30% ;
-    margin: 30% 0 0 55%;
-    /*background-color: red;*/
+    height: 30%;
+    margin: 24% 0 0 58%;
+    /* background-color: red; */
 }
 
 .content05 .leftbox .location .word{
