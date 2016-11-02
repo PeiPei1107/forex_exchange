@@ -236,36 +236,44 @@
           <h1>外匯操作系統：</br>
           四大優點，免費擁有。</h1>
         </div>
+
+
         <div class="text">
           <img src="img/index/content04/line.png">
-          <div class="one">
+          <div class="item one">
             <div class="bigfont">
               <span>使用自動化獲利系統</span>
             </div>
-            <div class="smallfont">
               <p>每月獲利10%-20%，<br>
                  投資報酬率遠高於市面上<br>
                  高風險的投資工具。</p>
+          </div>
+          <div class="item two">
+            <div class="bigfont">
+              <span>完全免費提供</span>
             </div>
+            <p>多年研發的自動化獲利系統，<br>
+               不收任何系統費用，<br>
+               翻轉人生零門檻。</p>
           </div>
-          <div class="two">
-          <span>完全免費提供</span>
-          <p>多年研發的自動化獲利系統，<br>
-             不收任何系統費用，<br>
-             翻轉人生零門檻。</p>
+          <div class="item three">
+            <div class="bigfont">
+              <span>系統介面操作人性化</span>
+            </div>
+            <p>一小時的講座掌握操作手法，<br>
+             開始獲利</p>           
           </div>
-          <div class="three">
-          <span>系統介面操作人性化</span>
-          <p>一小時的講座掌握操作手法，<br>
-             開始獲利</p>
-          </div>
-          <div class="four">
-          <span>24小時監控智慧監控</span>
-          <p>每月獲利10%-20%，<br>
+          <div class="item four">
+            <div class="bigfont">
+              <span>24小時監控智慧監控</span>
+            </div>
+            <p>每月獲利10%-20%，<br>
              投資報酬率遠高於市面上<br>
              高風險的投資工具。</p>
           </div>
         </div>
+
+
       </div>  
     </div>
     <div class="topbox">
@@ -339,6 +347,62 @@
       </div>
     </div>
   </div>
-
+  <div class="content05">
+    <div class="colorbg">
+      <img src="img/index/content05/content05_bg.png">
+    </div>
+    <div class="leftbox">
+      <div class="location">
+        <div class="word">
+          <p>HONG&nbspKONG</p>
+        </div>
+        <div class="pic">
+          <img src="img/index/content05/map.png">
+        </div>
+        <div class="line">
+          <img src="img/index/content05/line3.png">
+        </div>
+      </div> 
+    </div>
+    <div class="rightbox">
+      <div class="wordbox">
+        <img src="">
+        <div class="top">
+          <img src="">
+          <p>香港場</p>
+        </div>
+        <div class="bottom">
+          <div class="item one">
+            <div class="title">
+              <img src="">
+              <p>名額限定</p>
+            </div>
+            <div class="word">
+              <p>20名</p>
+            </div>
+          </div>
+          <div class="item two">
+            <div class="title">
+              <img src="">
+              <p>報名截止</p>
+            </div>
+            <div class="word">
+              <p>2016年X月X日XX:XX前</p>
+            </div>
+          </div>
+          <div class="item three">
+            <div class="title">
+              <img src="">
+              <p>講座地點</p>
+            </div>
+            <div class="word">
+              <h1>香港大嶼山香港迪士尼樂園</h1>
+              <p>(每人酌收場地清潔費HK100元)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
