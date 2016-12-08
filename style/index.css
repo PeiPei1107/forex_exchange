@@ -1,223 +1,483 @@
 /*Internet Explorer用 支援4+*/
+
+
 /*(要擺第一個)*/
+
 @font-face {
-  font-family:"超研澤中特明";
-  src:url(img/font/bffc3d1cefb8031614b6ea315738297c.ttf); /*不可用 format()*/
+    font-family: chinese_superlight;
+    src: url(../img/font/chinesesuperlight.eot);
 }
+
+
+/*不可用 format()*/
+
+
 /*其他瀏覽器用*/
+
 @font-face {
-  font-family:"超研澤中特明";
-  src:url(img/font/bffc3d1cefb8031614b6ea315738297c.ttf) format("truetype");
+    font-family: chinese_superlight;
+    src: url(../img/font/chinesesuperlight.otf) format("truetype");
 }
-body { width:100%; overflow-y:scroll; }
-.content01{
+
+
+/*body { width:100%; overflow-y:scroll; }*/
+
+.content01 {
     display: block;
     position: relative;
     margin: 0 auto;
-}
-.content01 .blackbg{
-    display: block;
-    position: absolute; 
     width: 100%;
-    top:0px;
-    left:0px ;
+    height: 768px;
+}
+
+.content01 .colorbg,
+.content01 .blackbg {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
     z-index: 1;
 }
-.content01 .centerbox 
-{
+
+.content01 .blackbg {
+    z-index: 2;
+    animation: opacity_bg 2s;
+    -webkit-animation:opacity_bg 2s;
+}
+
+@-webkit-keyframes opacity_bg {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.content01 .colorbg img,
+.content01 .blackbg img {
+    width: 100%;
+    height: 100%;
+}
+
+.content01 .centerbox {
     display: block;
     position: absolute;
     display: flex;
-/*    align-items: center;*/
-    justify-content:center;
-    width: 860px;
-    left: 548px;
-    height: 1080px;
-    margin: 0 auto;
+    justify-content: center;
+    width: 900px;
+    left: 50%;
+    margin-left: -450px;
+    height: 100%;
     top: 0px;
-    /* overflow: hidden; */
-/*    background-color: black;*/
-    z-index: 1;
+    z-index: 3;
 }
-
-
-.content01 .centerbox h1 {
+.content01 .centerbox .title {
+    /*width: 100%;*/
     color: white;
-    text-align: center;
+    padding: 30px;
+    height: 50%;
+    margin: 0 auto;
+    
+    
+}
+.content01 .centerbox .title h1 {
+/*    color: white;
+
     letter-spacing: 10px;
     position: absolute;
     padding-top: 165px;
     padding-left: 150px;
     width: 100%;
-    font-size: 30pt;
-   font-family:"超研澤中特明";
+    font-size: 30pt;*/
+    font-family: "chinese_superlight";
+    float: left;
+    font-size: 28px;
+    letter-spacing: 10px;
+    display: inline-block;
 }
 
-.content01 .centerbox h1 img.one {
-    position: absolute;
-    width: 20%;
-    left: 122px;
-    top: 166px;
-}
-
-.content01 .centerbox h1 img.two {
-    position: absolute;
+.content01 .centerbox .title img.one {
+/*    position: absolute;*/
     width: 15%;
-    left: 485px;
-    top: 166px;
+    display: inline-block;
+/*    left: 122px;
+    top: 166px;*/
+    float: left;
 }
 
+.content01 .centerbox .title img.two {
+display: inline-block;
+    width: 12%;
+     float: left;
 
-.content01 .centerbox .text p
-{
+}
+
+.content01 .centerbox .wordbox {
+    padding: 10px;
+    overflow: hidden;
+    height: 150px;
+    margin-top: 450px;
+}
+
+.content01 .centerbox .wordbox .text p {
+
     display: block;
     float: left;
-    margin-left:5px ;
+    margin-left: 5px;
     line-height: 30px;
     color: white;
-    font-size: 20pt;
+    font-size: 16pt;
     height: 35px;
     z-index: 1;
     color: white;
-    font-family:"超研澤中特明";
+    font-family: "chinese_superlight";
 }
 
-.content01 .centerbox .text.one {
-    bottom: 386px;
+.content01 .centerbox .wordbox .text.one {
+
     line-height: 30px;
-    position: absolute;
+    padding: 15px 10px;
+
 }
 
-.content01 .centerbox .text.two {
-    bottom: 325px;
+.content01 .centerbox .wordbox .text.two {
+
     line-height: 30px;
-    position: absolute;
+     padding: 15px 10px;
+
 }
 
-
-.content01 .people{
+.content01 .people {
     display: block;
     position: relative;
     width: 100%;
     height: 100%;
-    z-index: 1;
-}
-.content01 .people .one  img{
-/*    display: block;*/
-    position: absolute;
-    margin: 0 auto;
-    top: -740px;
-    right: 705px;
-    width: 400px;
-}
-.content01 .people .two img{
-/*    display: block;*/
-    position: absolute;
-    top: -870px;
-    left: 377px;
-    width: 400px;
-}
-.content01 .people .three img{
-/*    display: block;*/
-    position: absolute;
-    top: -902px;
-    left: 44px;
-    width: 400px;
-}
-.content01 .people .four img{
-/*    display: block;*/
-    position: absolute;
-    top: -884px;
-    right: 150px;
-    width: 400px;
-}
-.content01 .people .five img{
-/*    display: block;*/
-    position: absolute;
-    top: -920px;
-    right: -30px;
-    width: 400px;
+    z-index: 3;
 }
 
+.content01 .people img {
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.content01 .people img.one {
+    animation: fadeIn 3.5s;
+    -webkit-animation: fadeIn 3.5s;
+}
+
+.content01 .people img.two {
+    animation: fadeIn 4.5s;
+    -webkit-animation: fadeIn 4.5s
+}
+
+.content01 .people img.three {
+    animation: fadeIn 5.5s ;
+    -webkit-animation: fadeIn 5.5s;
+}
+
+.content01 .people img.four {
+    animation: fadeIn 6.5s;
+    -webkit-animation: fadeIn 6.5s;
+}
+
+.content01 .people img.five {
+    animation: fadeIn 7.5s;
+    -webkit-animation: fadeIn 7.5s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+/**/
 
 .header_center {
     display: block;
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     bottom: 0px;
     left: 0px;
-    width: 1920px;
-    height:91px ;
+    width: 100%;
+    height: 65px;
     margin: 0 auto;
-    z-index: 1;
-    }
-
+    z-index: 999;
+}
 
 .header_center img {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
     z-index: -1;
-    width: 100%;
+    width: 50%;
+    height: 100%;
     overflow: hidden;
 }
 
+.header_center img.left {
+    left: 0px;
+}
 
+.header_center img.right {
+    right: 0px;
+}
 
 .header_center .nav {
     margin: 0 auto;
-    margin-bottom: 10px;
-    list-style: none;
-
+    width: 500px;
+    height: 100%;
+    /*  margin-bottom: 10px;*/
 }
 
-a.li{
+a.li {
     float: left;
-    font-size: 14pt;
-    font-family: "超研澤中特明";
-    margin-left: 65px;
-    margin-top: 32px;
+    font-size: 13pt;
+    padding: 20px 18px;
     color: #323333;
     letter-spacing: 3px;
-     z-index: 1;
+    z-index: 1;
+    text-align: center;
+    text-decoration: none;
 }
+
+a.li.left {
+    float: left;
+}
+
+a.li.right {
+    float: right;
+}
+
+a.li p {
+    font-family: "chinese_superlight";
+}
+
+@media screen and (min-width: 1800px) {
+    /*1800*/
+    .content01 {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+    .content01 .blackbg {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+    .content01 .centerbox {
+        display: block;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 860px;
+        left: 548px;
+        height: 1080px;
+        margin: 0 auto;
+        top: 0px;
+        z-index: 1;
+    }
+    .content01 .centerbox h1 {
+        color: white;
+        text-align: center;
+        letter-spacing: 10px;
+        position: absolute;
+        padding-top: 165px;
+        padding-left: 150px;
+        width: 100%;
+        font-size: 30pt;
+        font-family: "chinese_superlight";
+    }
+    .content01 .centerbox h1 img.one {
+        position: absolute;
+        width: 20%;
+        left: 122px;
+        top: 166px;
+    }
+    .content01 .centerbox h1 img.two {
+        position: absolute;
+        width: 15%;
+        left: 485px;
+        top: 166px;
+    }
+    .content01 .centerbox .text p {
+        display: block;
+        float: left;
+        margin-left: 5px;
+        line-height: 30px;
+        color: white;
+        font-size: 20pt;
+        height: 35px;
+        z-index: 1;
+        color: white;
+        font-family: "chinese_superlight";
+    }
+    .content01 .centerbox .text.one {
+        bottom: 386px;
+        line-height: 30px;
+        position: absolute;
+    }
+    .content01 .centerbox .text.two {
+        bottom: 325px;
+        line-height: 30px;
+        position: absolute;
+    }
+    .content01 .people {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .content01 .people .one img {
+        /*    display: block;*/
+        position: absolute;
+        margin: 0 auto;
+        top: -740px;
+        right: 705px;
+        width: 400px;
+    }
+    .content01 .people .two img {
+        /*    display: block;*/
+        position: absolute;
+        top: -870px;
+        left: 377px;
+        width: 400px;
+    }
+    .content01 .people .three img {
+        /*    display: block;*/
+        position: absolute;
+        top: -902px;
+        left: 44px;
+        width: 400px;
+    }
+    .content01 .people .four img {
+        /*    display: block;*/
+        position: absolute;
+        top: -884px;
+        right: 150px;
+        width: 400px;
+    }
+    .content01 .people .five img {
+        /*    display: block;*/
+        position: absolute;
+        top: -920px;
+        right: -30px;
+        width: 400px;
+    }
+    .header_center {
+        display: block;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0px;
+        left: 0px;
+        width: 1920px;
+        height: 91px;
+        margin: 0 auto;
+        z-index: 1;
+    }
+    .header_center img {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        z-index: -1;
+        width: 100%;
+        overflow: hidden;
+    }
+    .header_center .nav {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        list-style: none;
+    }
+    a.li {
+        float: left;
+        font-size: 14pt;
+        font-family: "chinese_superlight";
+        margin-left: 65px;
+        margin-top: 32px;
+        color: #323333;
+        letter-spacing: 3px;
+        z-index: 1;
+    }
+}
+
+
 /*----------------------------------content2-------------------------*/
+
 .content02 {
     display: block;
     width: 100%;
-    height: 1164px;
+    /* height: 1164px;*/
+    height: 768px;
     position: relative;
-
 }
-/*鈔票背景*//*先暫時隱藏區塊-測試用*/
-/*.content02 .first{   
-    display: none;
-}*/
 
-.content02 .moneybg img{
-    display:block;
+
+/*鈔票背景*/
+
+
+/*先暫時隱藏區塊-測試用*/
+
+.content02 .first {
+    display: none;
+}
+
+.content02 .moneybg img {
+    display: block;
     position: absolute;
     background-size: percentage;
-    width:1920px;
+    width: 1920px;
     height: 1000px;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
 }
-
 
 .content02 .money .left.front {
     display: block;
     position: absolute;
     width: 960px;
-    height: 1000px
-    left: -27px;
+    height: 1000px left: -27px;
     bottom: 164px;
     z-index: 1;
 }
 
-.content02 .money .left.front img{
+.content02 .money .left.front img {
     position: absolute;
     width: 88%;
     left: 0px;
@@ -241,7 +501,6 @@ a.li{
     bottom: 0px;
 }
 
-
 .content02 .centerbox {
     /* display: flex; */
     /* align-items: center; */
@@ -257,39 +516,35 @@ a.li{
     z-index: 1;
     /* background-color: black; */
     text-align: center;
-    font-family: "超研澤中特明";
+    font-family: "chinese_superlight";
 }
 
-
-
-.content02 .wordbox p{
-
-    font-family: "超研澤中特明";
+.content02 .wordbox p {
+    font-family: "chinese_superlight";
     font-size: 24pt;
     color: #4d5865;
     letter-spacing: 5px;
 }
 
-.content02 .wordbox p.two{
-
+.content02 .wordbox p.two {
     line-height: 60pt;
     font-size: 40pt;
     color: #c8124e;
 }
 
-.content02 .wordbox p.three{
-
+.content02 .wordbox p.three {
     line-height: 80pt;
 }
 
-.content02 .wordbox p.four{
+.content02 .wordbox p.four {
     font-size: 40pt;
     color: #c8124e;
 }
 
+
 /* 被鈔票bg蓋住的coinbg區塊-second*/
 
-.content02 .moneybg.two img{
+.content02 .moneybg.two img {
     z-index: -1
 }
 
@@ -305,7 +560,9 @@ a.li{
     z-index: -1;
 }
 
+
 /*統一定義second_item*/
+
 .content02 .second .item {
     display: block;
     position: absolute;
@@ -314,21 +571,30 @@ a.li{
     margin-left: 33px;
 }
 
-.content02 .second .item.one {margin-top: 170px;}
+.content02 .second .item.one {
+    margin-top: 170px;
+}
 
-.content02 .second .item.two { margin-top: 300px;}
+.content02 .second .item.two {
+    margin-top: 300px;
+}
 
-.content02 .second .item.three {margin-top: 430px;}
+.content02 .second .item.three {
+    margin-top: 430px;
+}
 
-.content02 .second .item.four { margin-top: 560px;}
+.content02 .second .item.four {
+    margin-top: 560px;
+}
 
-.content02 .second .item.five { margin-top: 690px;}
+.content02 .second .item.five {
+    margin-top: 690px;
+}
 
-.content02 .second .item .left{
-
+.content02 .second .item .left {
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     position: absolute;
     float: left;
     width: 30%;
@@ -348,14 +614,12 @@ a.li{
     height: 100%;
 }
 
-.content02 .second .item p{
-
+.content02 .second .item p {
     color: white;
     letter-spacing: 3px;
 }
 
 .content02 .second .item p.text-left {
-    
     font-size: 40pt;
 }
 
@@ -375,43 +639,43 @@ a.li{
     z-index: -1;
 }
 
+
 /*content02_title*/
+
 .middlebar {
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     bottom: 0px;
     left: 0px;
-    height:184px ;
+    height: 184px;
     width: 1920px;
     z-index: 1;
-   /* background-color: black;*/
+    /* background-color: black;*/
 }
 
 .middlebar img {
     display: block;
     position: absolute;
-    width:1920px;
+    width: 1920px;
     height: 184px;
     left: 0px;
     bottom: 0px;
     z-index: -1;
 }
 
-.middlebar span{
-
+.middlebar span {
     letter-spacing: 6px;
-    font-size:35px;
-    font-family: "超研澤中特明";
+    font-size: 35px;
+    font-family: "chinese_superlight";
     color: #4d5865;
 }
 
 
 /*content03*/
 
-.content03{
-    
+.content03 {
     display: block;
     position: relative;
     margin: 0 auto;
@@ -419,9 +683,10 @@ a.li{
     height: 1084px;
 }
 
+
 /*content03 右邊三角形區塊*/
+
 .content03 .rightbox {
-    
     position: absolute;
     top: 0px;
     right: 0px;
@@ -429,12 +694,12 @@ a.li{
     width: 769px;
     z-index: 1;
 }
-.content03 .rightbox img.triangle{
 
+.content03 .rightbox img.triangle {
     display: block;
     position: absolute;
     width: 100%;
-    height: 100% ;
+    height: 100%;
     right: 0px;
     /*display: none;*/
 }
@@ -445,26 +710,23 @@ a.li{
     display: none;
 }*/
 
-
-.content03 .rightbox .wordbox{
-
+.content03 .rightbox .wordbox {
     display: block;
     position: absolute;
     width: 500px;
-    height:450px;
+    height: 450px;
     right: 60px;
     margin-top: 390px;
-    }
+}
 
- .content03 .rightbox .wordbox .text {
-    
+.content03 .rightbox .wordbox .text {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 50%;  
+    height: 50%;
     font-size: 25pt;
-    letter-spacing:2px ;
- }
+    letter-spacing: 2px;
+}
 
 .content03 .rightbox .wordbox .text ul {
     display: block;
@@ -472,29 +734,37 @@ a.li{
     height: 100%;
     margin-top: 13%;
     color: #231815;
-}/*#663300*/
+}
 
-  .content03 .rightbox .wordbox .text li{
-    
+
+/*#663300*/
+
+.content03 .rightbox .wordbox .text li {
     display: block;
     margin-top: 2%;
     z-index: 3;
- }
-
-.content03 .rightbox .wordbox .text.one{
-
-     color: #4d5865;
-     line-height: 70px;
-     display: none;
 }
 
-.content03 .rightbox .wordbox .text.two {display: none;}
+.content03 .rightbox .wordbox .text.one {
+    color: #4d5865;
+    line-height: 70px;
+    display: none;
+}
 
-.content03 .rightbox .wordbox .text.three {display: none;}
+.content03 .rightbox .wordbox .text.two {
+    display: none;
+}
+
+.content03 .rightbox .wordbox .text.three {
+    display: none;
+}
+
 
 /*.content03 .rightbox .wordbox .text.four {display: none;}*/
 
-.content03 .rightbox .wordbox .text.one p {padding-top: 83px;}
+.content03 .rightbox .wordbox .text.one p {
+    padding-top: 83px;
+}
 
 .content03 .rightbox .wordbox .pic {
     position: absolute;
@@ -505,18 +775,21 @@ a.li{
     height: 50%;
     bottom: 0px;
 }
+
 .content03 .rightbox .wordbox .pic img.plane {
     display: block;
     position: absolute;
     width: 30%;
     margin-left: 20px;
     margin-top: -6px;
-    display: none; /*test*/
+    display: none;
+    /*test*/
 }
 
-/*content03 長條三個區塊*/
-.content03 .block{
 
+/*content03 長條三個區塊*/
+
+.content03 .block {
     display: block;
     position: relative;
     top: 0px;
@@ -525,8 +798,7 @@ a.li{
     z-index: -1;
 }
 
-.content03 .block .top{
-
+.content03 .block .top {
     display: block;
     position: absolute;
     top: 0px;
@@ -534,16 +806,15 @@ a.li{
     height: 33%;
 }
 
-.content03 .block .middle{
-
+.content03 .block .middle {
     margin-top: 362px;
     display: block;
     position: absolute;
     width: 100%;
     height: 33%;
- }
+}
 
-.content03 .block .bottom{
+.content03 .block .bottom {
     margin-top: 723px;
     display: block;
     position: absolute;
@@ -551,8 +822,7 @@ a.li{
     height: 33%;
 }
 
-.content03 .block img.bg{
-
+.content03 .block img.bg {
     display: block;
     position: absolute;
     margin: 0 auto;
@@ -569,7 +839,6 @@ a.li{
 }
 
 .content03 .block .word .title {
-
     display: flex;
     justify-content: center;
     position: absolute;
@@ -581,22 +850,26 @@ a.li{
     /*background-color: white;*/
 }
 
-.content03 .block .word .title span{
+.content03 .block .word .title span {
     display: block;
     width: 100%;
     padding-top: 12.5%;
 }
 
-.content03 .block .top .word .title span {text-align: right; }
-.content03 .block .middle .title span {padding-left: 42%;}
-.content03 .block .bottom .title span{
-    padding-left:15%;
+.content03 .block .top .word .title span {
+    text-align: right;
+}
+
+.content03 .block .middle .title span {
+    padding-left: 42%;
+}
+
+.content03 .block .bottom .title span {
+    padding-left: 15%;
     color: #4d5865;
 }
 
-
-.content03 .block .text{
-
+.content03 .block .text {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -608,31 +881,56 @@ a.li{
     /*background-color: blue;*/
 }
 
-.content03 .block .text p{
+.content03 .block .text p {
     display: block;
     width: 100%;
     padding-top: 10%;
 }
 
-.content03 .block .middle .text p{padding-left:35%;}
-.content03 .block .bottom .text p{padding-top: 12.5%;}
+.content03 .block .middle .text p {
+    padding-left: 35%;
+}
+
+.content03 .block .bottom .text p {
+    padding-top: 12.5%;
+}
+
 
 /*隱藏部分區塊*/
 
-.content03 .block .top img.bg.one{display: none;}
+.content03 .block .top img.bg.one {
+    display: none;
+}
+
+
 /*.content03 .block .middle img.bg.one{display: none;}*/
-.content03 .block .bottom img.bg.one{display: none;}
+
+.content03 .block .bottom img.bg.one {
+    display: none;
+}
+
+
 /*.content03 .block .top .word .title{display: none;}*/
-.content03 .block .middle .word .title{display: none;}
-.content03 .block .top .word .text{display: none;}
+
+.content03 .block .middle .word .title {
+    display: none;
+}
+
+.content03 .block .top .word .text {
+    display: none;
+}
+
+
 /*.content03 .block .middle .word .text{display: none;}*/
-.content03 .block .bottom .word .text{display: none;}
+
+.content03 .block .bottom .word .text {
+    display: none;
+}
 
 
 /*content04*/
 
-.content04{
-    
+.content04 {
     display: block;
     position: relative;
     /*margin: 0 auto;*/
@@ -643,6 +941,7 @@ a.li{
     background-position: center center;
     background-repeat: no-repeat;
 }
+
 .content04 .colorbg {
     display: block;
     position: absolute;
@@ -653,20 +952,22 @@ a.li{
     z-index: 1;
     background-position: fixed;
 }
+
+
 /*leftbox設定*/
-.content04 .leftbox{   
+
+.content04 .leftbox {
     display: block;
     position: absolute;
-    width:1304.5px ;
-    height:100% ;
+    width: 1304.5px;
+    height: 100%;
     left: 0px;
-    top:0px;
+    top: 0px;
     /*background-color: white;*/
     z-index: 1;
 }
 
-.content04 .leftbox .picbox{
-
+.content04 .leftbox .picbox {
     display: block;
     position: absolute;
     width: 100%;
@@ -674,35 +975,53 @@ a.li{
     /*background-color: black;*/
 }
 
-.content04 .leftbox .picbox img{
+.content04 .leftbox .picbox img {
     display: block;
     position: absolute;
     left: 0px;
-    top:0px;
+    top: 0px;
 }
 
-.content04 .leftbox .picbox img.one{  
+.content04 .leftbox .picbox img.one {
     /*pen有從螢幕外滑入的動畫(滑鼠滾輪滑動)*/
     position: absolute;
     width: 50%;
-    left:0px;
-    animation:move_left 3.2s;
-    -webkit-animation:move_left 3.2s;
+    left: 0px;
+    animation: move_left 3.2s;
+    -webkit-animation: move_left 3.2s;
 }
 
-@keyframes move_left{
-    0%{opacity:0;left:-50%;}
-    50%{opacity:0;left:-20%;}
-    100% {opacity:1;left:0%;}
-}
-@-webkit-keyframes move_left{
-    0%{opacity:0;left:-50%;}
-    50%{opacity:0;left:-20%;}
-    100% {opacity:1;left:0%;}
+@keyframes move_left {
+    0% {
+        opacity: 0;
+        left: -50%;
+    }
+    50% {
+        opacity: 0;
+        left: -20%;
+    }
+    100% {
+        opacity: 1;
+        left: 0%;
+    }
 }
 
+@-webkit-keyframes move_left {
+    0% {
+        opacity: 0;
+        left: -50%;
+    }
+    50% {
+        opacity: 0;
+        left: -20%;
+    }
+    100% {
+        opacity: 1;
+        left: 0%;
+    }
+}
 
-.content04 .topbox{
+.content04 .topbox {
     display: block;
     position: absolute;
     top: 0px;
@@ -713,7 +1032,7 @@ a.li{
     z-index: 1;
 }
 
-.content04 .topbox .wordbox{
+.content04 .topbox .wordbox {
     display: block;
     position: absolute;
     top: 0px;
@@ -724,6 +1043,7 @@ a.li{
     margin-left: 20%;
     bottom: 0px;
 }
+
 .content04 .topbox .wordbox span {
     display: block;
     font-size: 30pt;
@@ -732,28 +1052,49 @@ a.li{
     padding-top: 12%;
     font-style: italic;
     /* position: absolute; */
-    animation:move_left_span 2.5s;
-    -webkit-animation:move_left_span 2.5s;
+    animation: move_left_span 2.5s;
+    -webkit-animation: move_left_span 2.5s;
 }
 
-@keyframes move_left_span{
-    0%{opacity:0;padding-left:-5%;}
-    50%{opacity:0;padding-left:5%;}
-    100% {opacity:1;padding-left:10%;}
+@keyframes move_left_span {
+    0% {
+        opacity: 0;
+        padding-left: -5%;
+    }
+    50% {
+        opacity: 0;
+        padding-left: 5%;
+    }
+    100% {
+        opacity: 1;
+        padding-left: 10%;
+    }
 }
-@-webkit-keyframes move_left_span{
-   0%{opacity:0;padding-left:-5%;}
-    50%{opacity:0;padding-left:5%;}
-    100% {opacity:1;padding-left:10%;}
+
+@-webkit-keyframes move_left_span {
+    0% {
+        opacity: 0;
+        padding-left: -5%;
+    }
+    50% {
+        opacity: 0;
+        padding-left: 5%;
+    }
+    100% {
+        opacity: 1;
+        padding-left: 10%;
+    }
 }
+
 
 /*rightbox設定*/
+
 .content04 .rightbox {
     display: block;
     position: absolute;
     right: 0px;
     top: 0px;
-    width:60%;
+    width: 60%;
     height: 100%;
     /*background-color: yellow;*/
     z-index: 1;
@@ -769,67 +1110,74 @@ a.li{
     /*background-color: yellow;*/
 }
 
-.content04 .rightbox .wordbox .title{
+.content04 .rightbox .wordbox .title {
     display: block;
     position: absolute;
     width: 100%;
     height: 25%;
-/*    background-color: white;*/
+    /*    background-color: white;*/
 }
 
-.content04 .rightbox .wordbox .title .word{
+.content04 .rightbox .wordbox .title .word {
     display: block;
     position: absolute;
-    width:100%;
+    width: 100%;
     height: 60%;
     top: 0%;
     left: 0%;
     /*background-color: black;*/
-    
 }
 
-.content04 .rightbox .wordbox .title .word p{
-    top:0%;
+.content04 .rightbox .wordbox .title .word p {
+    top: 0%;
     margin-left: 0%;
     font-size: 20pt;
     font-weight: 1px;
-    color:#2f2b28 ;
+    color: #2f2b28;
     font-weight: 3px;
     letter-spacing: 3px;
     line-height: 40px;
-    animation:move_left_title 3.5s;
-    -webkit-animation:move_left_title 3.5s;
+    animation: move_left_title 3.5s;
+    -webkit-animation: move_left_title 3.5s;
 }
+
 .content04 .rightbox .wordbox .title .line {
     display: block;
     position: absolute;
     width: 100%;
     height: 40%;
- /*   background-color: red;*/
+    /*   background-color: red;*/
     bottom: 0%;
     left: 0%;
 }
-.content04 .rightbox .wordbox .title .line img{
+
+.content04 .rightbox .wordbox .title .line img {
     display: block;
     position: absolute;
     width: 50%;
-    animation:opa 3.5s;
-    -webkit-animation:opa 3.5s;
+    animation: opa 3.5s;
+    -webkit-animation: opa 3.5s;
 }
 
-@keyframes opa{
-    0%{opacity:0;}
-    50%{opacity:0;}
-    100% {opacity:1;}
+@keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.content04 .rightbox .wordbox .text{
+.content04 .rightbox .wordbox .text {
     display: block;
     position: absolute;
     width: 100%;
     height: 75%;
-    top:25%;
-    left:0%;
+    top: 25%;
+    left: 0%;
     /*background-color: white;*/
 }
 
@@ -841,31 +1189,68 @@ a.li{
     font-size: 15pt;
     line-height: 40px;
     letter-spacing: 3px;
-    animation:move_left_p 3.5s;
-    -webkit-animation:move_left_p 3.5s;
+    animation: move_left_p 3.5s;
+    -webkit-animation: move_left_p 3.5s;
 }
 
+@keyframes move_left_title {
+    0% {
+        opacity: 0;
+        margin-left: -10%;
+    }
+    50% {
+        opacity: 0;
+        margin-left: -3%;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
 
-@keyframes move_left_title{
-    0%{opacity:0;margin-left: -10%;}
-    50%{opacity:0;margin-left:-3%;}
-    100% {opacity:1;margin-left:0%;}
-}
-@-webkit-keyframes move_left_title{
-    0%{opacity:0;margin-left: -10%;}
-    50%{opacity:0;margin-left:-3%;}
-    100% {opacity:1;margin-left:0%;}
+@-webkit-keyframes move_left_title {
+    0% {
+        opacity: 0;
+        margin-left: -10%;
+    }
+    50% {
+        opacity: 0;
+        margin-left: -3%;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0%;
+    }
 }
 
-@keyframes move_left_p{
-    0%{opacity:0;margin-left: -5%;}
-    50%{opacity:0;margin-left:-0%;}
-    100% {opacity:1;margin-left:3%;}
+@keyframes move_left_p {
+    0% {
+        opacity: 0;
+        margin-left: -5%;
+    }
+    50% {
+        opacity: 0;
+        margin-left: -0%;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 3%;
+    }
 }
-@-webkit-keyframes move_left_p{
-    0%{opacity:0;margin-left: -5%;}
-    50%{opacity:0;margin-left:-0%;}
-    100% {opacity:1;margin-left:3%;}
+
+@-webkit-keyframes move_left_p {
+    0% {
+        opacity: 0;
+        margin-left: -5%;
+    }
+    50% {
+        opacity: 0;
+        margin-left: -0%;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 3%;
+    }
 }
 
 .content04 .rightbox .wordbox .pic {
@@ -878,43 +1263,39 @@ a.li{
     left: 26%;
     /* background-color: white; */
 }
-.content04 .rightbox .wordbox .pic img{
+
+.content04 .rightbox .wordbox .pic img {
     display: block;
     position: absolute;
     width: 70%;
 }
 
-.content04 .leftbox .picbox img.one{
+.content04 .leftbox .picbox img.one {
     display: none;
 }
 
-.content04 .topbox{
+.content04 .topbox {
     display: none;
 }
 
-.content04 .rightbox .wordbox{
+.content04 .rightbox .wordbox {
     display: none;
 }
-
 
 
 /*四大保證區塊*/
 
-
-.content04 .leftbox .picbox img.two{
-
-    height:100%;
+.content04 .leftbox .picbox img.two {
+    height: 100%;
     overflow: hidden;
 }
 
-.content04 .leftbox .picbox img.three{
-
-    height:100%;
+.content04 .leftbox .picbox img.three {
+    height: 100%;
     overflow: hidden;
 }
 
-.content04 .leftbox .wordbox{
-
+.content04 .leftbox .wordbox {
     /*display: none;*/
     display: block;
     position: relative;
@@ -944,9 +1325,7 @@ a.li{
     letter-spacing: 3px;
 }
 
-
-.content04 .leftbox .wordbox .text{
-
+.content04 .leftbox .wordbox .text {
     /*display: none;*/
     display: block;
     position: absolute;
@@ -955,46 +1334,44 @@ a.li{
     left: 0%;
     bottom: 0%;
     overflow: hidden;
-    color:white;/*background-color:black;*/
-    
+    color: white;
+    /*background-color:black;*/
 }
+
 
 /*左邊區塊Line*/
 
-.content04 .leftbox .wordbox .text img{ 
-
+.content04 .leftbox .wordbox .text img {
     display: block;
     position: absolute;
     margin-top: 16%;
     width: 100%;
 }
 
-.content04 .leftbox .wordbox .text .item{
-
+.content04 .leftbox .wordbox .text .item {
     display: block;
     position: absolute;
     width: 100%;
     height: 100%;
     text-align: center;
-    z-index: 1;/*background-color: yellow;*/
-    
+    z-index: 1;
+    /*background-color: yellow;*/
 }
 
-.content04 .leftbox .wordbox .text .bigfont{
-
+.content04 .leftbox .wordbox .text .bigfont {
     display: flex;
     position: absolute;
-    top:5%;
+    top: 5%;
     width: 100%;
-    height:25% ;
+    height: 25%;
     font-size: 25pt;
     align-items: center;
-    justify-content:center;
-    letter-spacing: 4px;/*background-color: black;*/
-    
+    justify-content: center;
+    letter-spacing: 4px;
+    /*background-color: black;*/
 }
 
-.content04 .leftbox .wordbox .text p{
+.content04 .leftbox .wordbox .text p {
     display: block;
     font-size: 20pt;
     margin-top: 26%;
@@ -1002,75 +1379,85 @@ a.li{
     line-height: 55px;
 }
 
-.content04 .leftbox .wordbox .text .two{display: none;}
+.content04 .leftbox .wordbox .text .two {
+    display: none;
+}
 
-.content04 .leftbox .wordbox .text .three{display: none;}
+.content04 .leftbox .wordbox .text .three {
+    display: none;
+}
 
-.content04 .leftbox .wordbox .text .four{display: none;}
+.content04 .leftbox .wordbox .text .four {
+    display: none;
+}
+
 
 /*Iconbox設定*/
 
-.content04 .rightbox .iconbox{
+.content04 .rightbox .iconbox {
     display: block;
     position: relative;
     width: 90%;
     height: 25%;
     top: 47%;
-    left: 5%;   
-    z-index: 1;/*background-color: red;*/
-    
+    left: 5%;
+    z-index: 1;
+    /*background-color: red;*/
 }
 
-.content04 .rightbox .iconbox .item{
+.content04 .rightbox .iconbox .item {
     float: left;
     display: block;
     width: 20%;
-    height: 100%; 
-    margin-left: 2%;/*background-color: white;*/
+    height: 100%;
+    margin-left: 2%;
+    /*background-color: white;*/
 }
 
-.content04 .rightbox .iconbox .item.one{
-
-     margin-left: 0%;
+.content04 .rightbox .iconbox .item.one {
+    margin-left: 0%;
 }
 
-
-.content04 .rightbox .iconbox .item .icon{
+.content04 .rightbox .iconbox .item .icon {
     display: block;
     width: 100%;
-    height: 75%;/*background-color: yellow;*/
-    
+    height: 75%;
+    /*background-color: yellow;*/
 }
 
-.content04 .rightbox .iconbox img.one{
+.content04 .rightbox .iconbox img.one {
     width: 100%;
     float: left;
     overflow: hidden;
 }
 
-.content04 .rightbox .iconbox .item .word{
+.content04 .rightbox .iconbox .item .word {
     display: block;
     width: 100%;
     height: 25%;
-    text-align: center;/*background-color: blue;*/
+    text-align: center;
+    /*background-color: blue;*/
 }
 
-.content04 .rightbox .iconbox .item .word p{
+.content04 .rightbox .iconbox .item .word p {
     padding: 15% 0 0 0;
     font-size: 20pt;
     line-height: 3px;
-    color:#333333;
+    color: #333333;
+}
+
+.content04 .rightbox .iconbox img.two {
+    display: none;
+}
+
+.content04 .rightbox .iconbox img.two {
+    display: none;
 }
 
 
-
-.content04 .rightbox .iconbox img.two{display: none;}
-
-.content04 .rightbox .iconbox img.two{display: none;}
-
 /*content05*/
 
-.content05{
+.content05 {
     display: block;
     position: relative;
     /*margin: 0 auto;*/
@@ -1080,10 +1467,9 @@ a.li{
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-
 }
 
-.content05 .colorbg{
+.content05 .colorbg {
     display: block;
     position: absolute;
     width: 100%;
@@ -1091,12 +1477,12 @@ a.li{
     left: 0px;
 }
 
-.content05 .leftbox{
+.content05 .leftbox {
     display: block;
     position: absolute;
-    width:50%;
-    height: 100%;/*background-color: white;*/
-    
+    width: 50%;
+    height: 100%;
+    /*background-color: white;*/
 }
 
 .content05 .leftbox .location {
@@ -1108,12 +1494,12 @@ a.li{
     /* background-color: red; */
 }
 
-.content05 .leftbox .location .word{
+.content05 .leftbox .location .word {
     display: block;
     position: absolute;
     width: 75%;
-    height:33% ;
-    top:0%;
+    height: 33%;
+    top: 0%;
     /*left: 0%;background-color: blue;*/
     z-index: 1;
 }
@@ -1125,21 +1511,19 @@ a.li{
     margin: 12% 0px 0px 20%;
 }
 
-.content05 .leftbox .location .pic{
-
+.content05 .leftbox .location .pic {
     display: block;
     position: absolute;
     width: 30%;
-    height:70% ;
+    height: 70%;
     left: 0%;
     bottom: 0%;
     /*background-color: blue;*/
 }
 
-.content05 .leftbox .location .pic img{
+.content05 .leftbox .location .pic img {
     width: 100%;
 }
-
 
 .content05 .leftbox .location .line {
     display: block;

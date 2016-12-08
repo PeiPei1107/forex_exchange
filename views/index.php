@@ -1,76 +1,99 @@
 <?=$temp['header_up']?>
 <?=$temp['header_down']?>
+<script src="js/tool/smooth_scrollerator.js"></script>
+<script>
 
-<head>
-  <script>
+
+  Temp.ready(function(){
+  var window_height = $(window).height();
+  var window_width = $(window).width();
+
+  //滑到指定區塊執行動畫
+    $(document).scroll(function(){
+      var scroll_top = $(document).scrollTop();
+      var scroll_top_height = scroll_top + $(window).height() * 2 ;
+      // var content4_top = $('.town_bg').offset().top;
+      // var content4_top_height_all = $('.town_bg').height();
+      console.log(scroll_top);
+
+      var window_width = $(window).width();
+      var scroll_top = $(document).scrollTop();
+      console.log(scroll_top);
+      //1366版本
+      if(window_width >= 1025 && window_width <= 1500){
+        if(scroll_top == 0){
+        }
+        else if(scroll_top > 0 && scroll_top < 800){
+        }
+        else if(scroll_top > 800 && scroll_top < 1100){
+          $('.content2').addClass('hover');
+        }
+        else if(scroll_top > 1100 && scroll_top < 1700){
+        }
+        else if(scroll_top > 1700 && scroll_top < 2700){
+        }
+        else if(scroll_top > 2700 && scroll_top < 3000){
+        }
+        else if(scroll_top > 3000 && scroll_top < 5000){
+        }
+      }
+    });
+
     var options1 = {
     id: 'fadein'
     };
     $('.fadein').initReveal(options1);
-  </script>
-<!-- 最新編譯和最佳化的 CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<!-- 選擇性佈景主題 -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-<!-- 最新編譯和最佳化的 JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-</head>
-<body>
+});
+</script>
+<!-- <body> -->
   <!-- content01區塊 -->
   <div class="content01" id="content01">
     	<div class="colorbg" >
-    		<img src="img/index/content01/content01_bg.jpg" ></div>
+    		<img src="img/index/content01/content01_bg.jpg"></div>
       <div class="blackbg" >
-        <img src="img/index/content01/content01_blackbg.jpg" ></div>
+        <img src="img/index/content01/content01_blackbg.jpg"></div>
       <div class="people" >
-          <div class="one">
-            <img src="img/index/content01/bigman.png" >
-          </div>
-          <div class="two">
-            <img src="img/index/content01/suitman.png" >
-          </div>
-          <div class="three">
-            <img src="img/index/content01/sitman.png" >
-          </div>
-          <div class="four">
-            <img src="img/index/content01/shirtman.png" >
-          </div>
-          <div class="five">
-            <img src="img/index/content01/woman.png" >
-          </div> 
-        </div>
+          <!-- <div class="pic"> -->
+            <img src="img/index/content01/bigman01.png" class="one">
+            <img src="img/index/content01/suitman01.png" class="two">
+            <img src="img/index/content01/sitman01.png" class="three">
+            <img src="img/index/content01/shirtman01.png" class="four">
+            <img src="img/index/content01/woman01.png" class="five">
+          <!-- </div>  -->
+      </div>
       <div class="centerbox">
-          <h1 class="fadein"><img src="img/index/content01/M.png" class="one">型社會變成<img src="img/index/content01/L.png" class="two">&nbsp&nbsp&nbsp型社會</h1>
-
-          <div class="text one">
-            <p>你</p><p>&nbsp</p><p>依</p><p>然</p><p>是</p><p>金</p><p>錢</p>
-          <p>制</p><p>度</p><p>下</p></br>
-         </div>
-          <div class="text two">
-            <p>無</p><p>法</p><p>翻</p><p>身</p><p>的</p><p>那</p><p>群</p>
-            <p>人</p><p>嗎?</p>
+        <div class="title">
+          <img src="img/index/content01/M.png" class="one">
+          <h1 class="fadein">型社會變成</h1>
+          <img src="img/index/content01/L.png" class="two">
+          <h1>型社會</h1>
+        </div>  
+          <div class="wordbox">
+            <div class="text one">
+              <p>你</p><p>&nbsp</p><p>依</p><p>然</p><p>是</p><p>金</p><p>錢</p>
+            <p>制</p><p>度</p><p>下</p></br>
+           </div>
+            <div class="text two">
+              <p>無</p><p>法</p><p>翻</p><p>身</p><p>的</p><p>那</p><p>群</p>
+              <p>人</p><p>嗎?</p>
+            </div>
           </div>
       </div>
   <!-- headerbar -->
       <div class="header_center">
-        <img src="img/index/content01/headerbar01.png">
+        <img src="img/index/content01/header_left.png" class="left">
+        <img src="img/index/content01/header_right.png" class="right">
         <div class="nav">
-          <a href="#content01" class="li one">
+          <a href="#content01" class="li left">
             <p>從這開始</p>
           </a>
-          <a href="#content02" class="li">
-            <p>投資困境</p>
-          </a>
-          <a href="#content03" class="li">
+          <a href="#content03" class="li left">
             <p>夢想實踐</p>
           </a>
-          <a href="#content03" class="li">
-            <p>致富機會</p>
+          <a href="#content03" class="li right">
+            <p>改變自我</p>
           </a>
-          <a href="#content04" class="li">
-            <p>四大保證</p>
-          </a>
-          <a href="#content05" class="li">
+          <a href="#content05" class="li right">
             <p>立即參加</p>
           </a>
         </div>
@@ -404,5 +427,5 @@
       </div>
     </div>
   </div>
-</body>
+<!-- <body> -->
 
