@@ -2,9 +2,7 @@
 <?=$temp['header_down']?>
 <script src="js/tool/smooth_scrollerator.js"></script>
 <script>
-
-
-  Temp.ready(function(){
+$(function(){
   var window_height = $(window).height();
   var window_width = $(window).width();
 
@@ -14,19 +12,24 @@
       var scroll_top_height = scroll_top + $(window).height() * 2 ;
       // var content4_top = $('.town_bg').offset().top;
       // var content4_top_height_all = $('.town_bg').height();
-      console.log(scroll_top);
 
       var window_width = $(window).width();
-      var scroll_top = $(document).scrollTop();
       console.log(scroll_top);
-      //1366版本
-      if(window_width >= 1025 && window_width <= 1500){
+
+      var content01_height = $('.content01').height();
+      var content02_height = $('.content02').height();
+      var content03_height = $('.content03').height();
+      var content04_height = $('.content04').height();
+      var content05_height = $('.content05').height();
+      var content06_height = $('.content06').height();
+ 
         if(scroll_top == 0){
+          $('.content02').removeClass('hover');
         }
-        else if(scroll_top > 0 && scroll_top < 800){
+        else if( scroll_top > content01_height && scroll_top < content01_height + content02_height / 2 ){
+           $('.content02').addClass('hover');
         }
         else if(scroll_top > 800 && scroll_top < 1100){
-          $('.content2').addClass('hover');
         }
         else if(scroll_top > 1100 && scroll_top < 1700){
         }
@@ -36,14 +39,13 @@
         }
         else if(scroll_top > 3000 && scroll_top < 5000){
         }
-      }
     });
-
-    var options1 = {
-    id: 'fadein'
-    };
-    $('.fadein').initReveal(options1);
 });
+
+// var options1 = {
+//     id: 'fadein'
+//     };
+//     $('.fadein').initReveal(options1);
 </script>
 <!-- <body> -->
   <!-- content01區塊 -->
@@ -63,21 +65,21 @@
       </div>
       <div class="centerbox">
         <div class="title">
-          <img src="img/index/content01/M.png" class="one">
+          <img src="img/index/content01/M01.png" class="one">
           <h1 class="fadein">型社會變成</h1>
-          <img src="img/index/content01/L.png" class="two">
+          <img src="img/index/content01/L01.png" class="two">
           <h1>型社會</h1>
         </div>  
-          <div class="wordbox">
-            <div class="text one">
-              <p>你</p><p>&nbsp</p><p>依</p><p>然</p><p>是</p><p>金</p><p>錢</p>
-            <p>制</p><p>度</p><p>下</p></br>
-           </div>
-            <div class="text two">
-              <p>無</p><p>法</p><p>翻</p><p>身</p><p>的</p><p>那</p><p>群</p>
-              <p>人</p><p>嗎?</p>
-            </div>
+        <div class="wordbox">
+          <div class="text one">
+            <p>你</p><p>&nbsp</p><p>依</p><p>然</p><p>是</p><p>金</p><p>錢</p>
+          <p>制</p><p>度</p><p>下</p></br>
+         </div>
+          <div class="text two">
+            <p>無</p><p>法</p><p>翻</p><p>身</p><p>的</p><p>那</p><p>群</p>
+            <p>人</p><p>嗎?</p>
           </div>
+        </div>
       </div>
   <!-- headerbar -->
       <div class="header_center">
@@ -99,8 +101,11 @@
         </div>
       </div>
   </div>
+
+
   <!-- content02 -->
   <div class="content02" id="content02">
+    <!-- first -->
     <div class="first">
       <div class="moneybg one">
           <img src="img/index/content02/content02_bg1.png"></div>  
@@ -111,54 +116,67 @@
          <img src="img/index/content02/rgiht_money_big.png"></div>
         <div class="centerbox">
           <div class="wordbox">
-            <p class="one">想要投資賺錢，卻不知道如何</p>
-            <p class="two">踏出第一步?</p>
-            <p class="three">你&nbsp是否犯了以下</p>  
-            <p class="four">投資大忌?</p>
+            <p class="one">想要改變自己的人生，卻不知道從何開始?<br>
+            富人企業沒有公開的致勝心法!</p>
+            <div class="you">
+            <h1>你</h1>
+            <p class="three">&nbsp是否認真思考過<br>資本主義社會</p></div>
+            <p class="four">賺錢的秘密?</p>
           </div>
         </div>
       </div>
-  </div>
+    </div><!-- first -->
+    <!-- second -->
     <div class="second">
       <div class="moneybg two">
         <img src="img/index/content02/content02_bg2.png"></div>   
         <div class="wordbox">
           <div class="item one">
-              <div class="left"><p class="text-left">策</p></div>
-              <div class="right"><p class="text-right">策略僵化</p></div>   
-            <img src="img/index/content02/item_black.png">
+              <p class="text-left">策</p>
+              <div class="right">
+                <img src="img/index/content02/item_black01.png">
+                <p class="text-right">策略僵化</p>
+              </div>   
           </div>
           <div class="item two">
-              <div class="left"><p class="text-left">虧</p></div>
-              <div class="right"><p class="text-right">害怕虧損</p></div>     
-            <img src="img/index/content02/item_red.png">
-          </div> 
+            <p class="text-left">虧</p>
+            <div class="right">
+              <p class="text-right">害怕虧損</p>     
+              <img src="img/index/content02/item_red01.png">
+            </div>
+          </div>
           <div class="item three">
-              <div class="left"><p class="text-left">情</p></div>
-              <div class="right"><p class="text-right">情緒操作</p></div>      
-            <img src="img/index/content02/item_black.png">
+            <p class="text-left">情</p>
+            <div class="right">
+              <p class="text-right">情緒操作</p>     
+              <img src="img/index/content02/item_black01.png">
+            </div> 
           </div>  
           <div class="item four">
-              <div class="left"><p class="text-left">市</p></div>
-              <div class="right"><p class="text-right">誤判市場</p></div>      
-            <img src="img/index/content02/item_red.png">
+            <p class="text-left">市</p>
+            <div class="right">
+              <p class="text-right">誤判市場</p>      
+              <img src="img/index/content02/item_red01.png">
+            </div>
           </div> 
           <div class="item five">
-              <div class="left"><p class="text-left">運</p></div>
-              <div class="right"><p class="text-right">只靠運氣</p></div>     
-            <img src="img/index/content02/item_black.png">
+            <p class="text-left">運</p>
+            <div class="right">
+              <p class="text-right">只靠運氣</p>    
+              <img src="img/index/content02/item_black01.png">
+            </div> 
           </div> 
         </div>
-    </div>
-    <div class="middlebar">
-      <img src="img/index/content02/middle_bar.png">
-      <div class="title">
-        <span>
-          人人都享有致富&nbsp與&nbsp實踐夢想的權利
-        </span>
-      </div>
-    </div>
+    </div><!-- second -->
 </div>
+<div class="middlebar">
+  <img src="img/index/content02/middle_bar.png">
+    <h1>
+      人人都享有致富&nbsp與&nbsp實踐夢想的權利
+    </h1>
+</div>
+
+
 <!-- content03 -->  
   <div class="content03" id="content03">
     <div class="rightbox">
@@ -200,7 +218,7 @@
     <div class="block">
     <div class="top">
       <img src="img/index/content03/use_computer.jpg" class="bg">
-      <img src="img/index/content03/block_top.png" class="bg one">
+      <!-- <img src="img/index/content03/block_top.png" class="bg one"> -->
       <div class="word">
         <div class="title">
           <span>小資上班族</span>
@@ -214,7 +232,7 @@
     </div>
     <div class="middle">
       <img src="img/index/content03/Young_bg.jpg" class="bg">
-      <img src="img/index/content03/block_middle.png" class="bg one">
+<!--       <img src="img/index/content03/block_middle.png" class="bg one"> -->
       <div class="word">
         <div class="title">
           <span>青年創業家</span>
@@ -228,7 +246,7 @@
     </div>
     <div class="bottom">
       <img src="img/index/content03/businessman.jpg" class="bg">
-      <img src="img/index/content03/block_bottom.png" class="bg one">
+<!--       <img src="img/index/content03/block_bottom.png" class="bg one"> -->
       <div class="word">
         <div class="title">
           <span>中小企業主</span>
