@@ -487,6 +487,11 @@ a.li p {
     opacity: 0;
     right: -300px;
     bottom: -384px;
+}
+.content02.hover .money .right.front img {
+    opacity: 1;
+/*    right: -300px;
+    bottom: -384px;*/
     animation: move_right_money 2.5s ease-out 1.8s forwards;
     -webkit-animation: move_right_money 2.5s ease-out 1.8s forwards;
 }
