@@ -182,14 +182,15 @@ $(function(){
     <div class="rightbox">
       <img src="img/index/content03/triangle_one.png" class="triangle one">
       <!-- <img src="img/index/content03/triangle_two.png" class="triangle two"> -->
-      <img src="img/index/content03/triangle_three.png" class="triangle three">
+      <!-- <img src="img/index/content03/triangle_three.png" class="triangle three"> -->
       <!-- <img src="img/index/content03/triangle_four.png" class="triangle four"> -->
       <div class="wordbox">
         <div class="text one">
-          <p>別讓你的夢想被金錢束縛！<br>
-             想想自己是否有這些夢想？</p>
+          <p>不論你在社會的成就或高或低<br>
+              想想自己是不是值得更好的未來？
+          </p>
         </div>
-        <div class="text two">
+<!--         <div class="text two">
           <ul>
             <li>．想存到第一桶金</li>
             <li>．想擁有幸福溫暖的房屋</li>
@@ -209,7 +210,7 @@ $(function(){
             <li>．想拓展海外版圖</li>
             <li>．想網羅更多人才</li>
           </ul>
-        </div>
+        </div> -->
         <div class="pic">
         <img src="img/index/content03/plane.png" class="plane">
         </div>
@@ -223,11 +224,11 @@ $(function(){
         <div class="title">
           <span>小資上班族</span>
         </div>
-        <div class="text">
+<!--         <div class="text">
           <p>每個月領固定薪水，<br>
              工作多年存款少的可憐<br>
              難道永遠只能當小資女孩、小資男孩。</p>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="middle">
@@ -237,11 +238,11 @@ $(function(){
         <div class="title">
           <span>青年創業家</span>
         </div>
-        <div class="text">
+<!--         <div class="text">
           <p>有目標、有抱負，<br>
             卻因沒有資金被束縛，<br>
             無法實現創業夢。</p>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="bottom">
@@ -251,11 +252,11 @@ $(function(){
         <div class="title">
           <span>中小企業主</span>
         </div>
-        <div class="text">
+<!--         <div class="text">
           <p>企業邁入成長期，需要大量資金支撐，<br>
              讓企業繼續茁壯。
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -266,128 +267,97 @@ $(function(){
     <div class="colorbg">
       <img src="img/index/content04/strategy_bg.jpg">     
     </div>
-    <div class="leftbox">
-      <div class="picbox">
-        <img src="img/index/content04/pen.png" class="one">
-        <img src="img/index/content04/black_bg.png" class="two">
-        <img src="img/index/content04/brown_bg.png" class="three">
+    <div class="con_1">
+      <div class="leftbox">
+        <div class="picbox">
+          <img src="img/index/content04/pen.png"></div>
       </div>
-      <div class="wordbox">
-        <div class="title">
-          <h1>外匯操作系統：</br>
-          四大優點，免費擁有。</h1>
-        </div>
-
-
+      <h1>給自己一小時<br>我們教你一輩子適用的賺錢術！</h1>
+      <div class="rightbox">  
         <div class="text">
-          <img src="img/index/content04/line.png">
-          <div class="item one">
-            <div class="bigfont">
+          <h2>選擇比努力重要，趨勢比選擇重要<br>
+            但，自然定律才是宇宙不變的法則</h2>
+          <p class="one">透過分析超過20萬人的成功心得<br>
+              利用超過6年的時間透析鑽研<br>
+              我們找出了企業、財團、領袖、富人、成功者<br>
+              相同的關鍵定律及不能說的秘密</p>
+          <p class="two">『現實不需要夢想包裝，理想必須有能力實踐』</p>           
+        </div>
+      </div>
+    </div>
+    <div class="con_2">
+      <div class="leftbox">
+        <img src="img/index/content04/black_bg.png" class="one">
+        <img src="img/index/content04/brown_bg.png" class="two">
+        <div class="wordbox">
+            <h1>外匯操作系統：</br>
+            四大優點，免費擁有。</h1>
+          <div class="text">
+            <div class="item one">
               <span>使用自動化獲利系統</span>
-            </div>
               <p>每月獲利10%-20%，<br>
                  投資報酬率遠高於市面上<br>
                  高風險的投資工具。</p>
+            </div>
+<!--             <div class="item two">
+                <span>完全免費提供</span>
+              <p>多年研發的自動化獲利系統，<br>
+                 不收任何系統費用，<br>
+                 翻轉人生零門檻。</p>
+            </div>
+            <div class="item three">
+
+                <span>系統介面操作人性化</span>
+
+              <p>一小時的講座掌握操作手法，<br>
+               開始獲利</p>           
+            </div>
+            <div class="item four">
+
+                <span>24小時監控智慧監控</span>
+
+              <p>每月獲利10%-20%，<br>
+               投資報酬率遠高於市面上<br>
+               高風險的投資工具。</p>
+            </div> -->
+          </div>
+        </div>  
+      </div>
+      <div class="rightbox">
+        <div class="item_block">
+          <div class="item one">
+            <div class="icon one">
+  <!--             <img src="img/index/content04/money_icon.png" class="one">
+              <img src="img/index/content04/money_icon2.png" class="two"> -->
+            </div>
+              <p>高額獲利</p>
           </div>
           <div class="item two">
-            <div class="bigfont">
-              <span>完全免費提供</span>
+            <div class="icon two">
+  <!--             <img src="img/index/content04/use_icon.png" class="one">
+              <img src="img/index/content04/use_icon2.png" class="two"> -->
             </div>
-            <p>多年研發的自動化獲利系統，<br>
-               不收任何系統費用，<br>
-               翻轉人生零門檻。</p>
+              <p>操作人性</p>
           </div>
           <div class="item three">
-            <div class="bigfont">
-              <span>系統介面操作人性化</span>
+            <div class="icon three">
+  <!--             <img src="img/index/content04/system_icon.png" class="one">
+              <img src="img/index/content04/system_icon2.png" class="two"> -->
             </div>
-            <p>一小時的講座掌握操作手法，<br>
-             開始獲利</p>           
+              <p>免費系統</p>
           </div>
           <div class="item four">
-            <div class="bigfont">
-              <span>24小時監控智慧監控</span>
+            <div class="icon four">
+  <!--             <img src="img/index/content04/wisdom_icon.png" class="one">
+              <img src="img/index/content04/wisdom_icon2.png" class="two"> -->
             </div>
-            <p>每月獲利10%-20%，<br>
-             投資報酬率遠高於市面上<br>
-             高風險的投資工具。</p>
-          </div>
-        </div>
-
-
-      </div>  
-    </div>
-    <div class="topbox">
-      <div class="wordbox">
-      <span>給自己一小時！<br>
-            我們教你一輩子適用的賺錢術！
-      </span>
-    </div>
-    </div>
-    <div class="rightbox">
-      <div class="wordbox">
-        <div class="title">
-          <div class="word">
-          <p>用勞力賺來的死薪水<br>
-             永遠比不上有錢人用錢滾錢</p>
-           </div>
-          <div class="line">
-          <img src="img/index/content04/line2.png">
-          </div>
-        </div>
-        <div class="text">
-          <p>我們經過多年數據回測後再模擬測試，<br>
-             找到有錢人不敢告訴你的致勝公式！<br>
-             讓我們一窺有錢人的致富秘訣，<br>
-             只要投入&nbsp小額資本&nbsp，就能&nbsp創造超高收益<br>
-             讓你迅速回本無負擔，<br>
-             輕鬆翻轉人生。
-          </p>          
-        </div>
-        <div class="pic">
-          <img src="img/index/content04/change.png">
-        </div>
-      </div>
-      <div class="iconbox">
-        <div class="item one">
-          <div class="icon">
-            <img src="img/index/content04/money_icon.png" class="one">
-            <img src="img/index/content04/money_icon2.png" class="two">
-          </div>
-          <div class="word">
-            <p>高額獲利</p>
-          </div>
-        </div>
-        <div class="item two">
-          <div class="icon">
-            <img src="img/index/content04/use_icon.png" class="one">
-            <img src="img/index/content04/use_icon2.png" class="two">
-          </div>
-          <div class="word">
-            <p>操作人性</p>
-          </div>
-        </div>
-        <div class="item three">
-          <div class="icon">
-            <img src="img/index/content04/system_icon.png" class="one">
-            <img src="img/index/content04/system_icon2.png" class="two">
-          </div>
-          <div class="word">
-            <p>免費系統</p>
-          </div>
-        </div>
-        <div class="item four">
-          <div class="icon">
-            <img src="img/index/content04/wisdom_icon.png" class="one">
-            <img src="img/index/content04/wisdom_icon2.png" class="two">
-          </div>
-          <div class="word">
-            <p>智慧下單</p>
+              <p>智慧下單</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+
   <div class="content05">
     <div class="colorbg">
       <img src="img/index/content05/content05_bg.png">
@@ -407,43 +377,44 @@ $(function(){
     </div>
     <div class="rightbox">
       <div class="wordbox">
-        <img src="">
         <div class="top">
-          <img src="">
-          <p>香港場</p>
+          <img src="img/index/content05/money_y.png">
+          <p class="big">香港場</p>
         </div>
         <div class="bottom">
           <div class="item one">
-            <div class="title">
-              <img src="">
-              <p>名額限定</p>
-            </div>
-            <div class="word">
-              <p>20名</p>
-            </div>
+              <p class="left">名額限定</p>
+            <p>20名</p>
           </div>
           <div class="item two">
-            <div class="title">
-              <img src="">
-              <p>報名截止</p>
-            </div>
-            <div class="word">
+              <p class="left">報名截止</p>
               <p>2016年X月X日XX:XX前</p>
-            </div>
           </div>
           <div class="item three">
-            <div class="title">
-              <img src="">
-              <p>講座地點</p>
-            </div>
-            <div class="word">
-              <h1>香港大嶼山香港迪士尼樂園</h1>
-              <p>(每人酌收場地清潔費HK100元)</p>
-            </div>
+              <p class="left">講座地點</p>
+              <p>香港大嶼山香港迪士尼樂園<br>
+              (每人酌收場地清潔費HK100元)</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="content06">
+    <img src="img/index/content06/content06_bg.jpg">
+    <h1>別再錯過跟財富擦肩而過的機會!<br>
+把握機會填表報名，讓你的人生從此不同！</h1>
+
+<div class="form">
+  <div class="line"></div>
+    <div class="item">
+    <p>*您的姓名:</p>
+    <input type="text" name="username" class="one" placeholder=""></div>
+    <div class="item"><p>*聯絡電話:</p><input type="text" name="phone" class="twp" placeholder="09xx-xxx-xxx"></div>
+    <div class="item"><p>*電子信箱:</p><input type="text" name="email" class="three" placeholder="answoo@gmail.com"></div>
+
+    <input type="submit" class="submit" value="立即參加">  </div>
+</div>
+</div>
+
 <!-- <body> -->
 

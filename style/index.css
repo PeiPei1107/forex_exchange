@@ -438,7 +438,7 @@ a.li p {
 /*先暫時隱藏區塊-測試用*/
 
 .content02 .second {
-/*    display: none;*/
+    display: none;
 }
 
 .content02 .moneybg img {
@@ -477,8 +477,10 @@ a.li p {
 
 .content02.hover .money .left.front img {
     opacity: 1;
-    animation: move_left_money 2.5s ease-out 1.8s infinite  alternate;
-    -webkit-animation: move_left_money 2.5s ease-out 1.8s infinite  alternate;
+    /*    animation: move_left_money 2.5s ease-out 1.8s infinite alternate;
+    -webkit-animation: move_left_money 2.5s ease-out 1.8s infinite alternate;*/
+    animation: move_left_money 2.5s ease-out 1.8s forwards;
+    -webkit-animation: move_left_money 2.5s ease-out 1.8s forwards;
 }
 
 .content02 .money .right.front img {
@@ -707,45 +709,36 @@ a.li p {
 /*content03 右邊三角形區塊*/
 
 .content03 .rightbox {
-    position: absolute;
+    float: right;
     top: 0px;
     right: 0px;
     height: 100%;
-    width: 769px;
-    z-index: 1;
+    width: 542px;
 }
 
 .content03 .rightbox img.triangle {
-    display: block;
-    position: absolute;
     width: 100%;
     height: 100%;
-    right: 0px;
-    /*display: none;*/
 }
 
-
-/*.content03 .rightbox img.triangle.one{
-
-    display: none;
-}*/
+.content03 .rightbox .wordbox p {
+    font-family: "chinese_superlight";
+}
 
 .content03 .rightbox .wordbox {
-    display: block;
     position: absolute;
-    width: 500px;
-    height: 450px;
+    top: 44%;
     right: 60px;
-    margin-top: 390px;
+    z-index: 3;
+    float: right;
 }
 
 .content03 .rightbox .wordbox .text {
-    display: flex;
-    justify-content: center;
     width: 100%;
     height: 50%;
     font-size: 25pt;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .content03 .rightbox .wordbox .text ul {
@@ -766,9 +759,15 @@ a.li p {
 }
 
 .content03 .rightbox .wordbox .text.one {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.content03 .rightbox .wordbox .text.one p {
     color: #4d5865;
-    line-height: 70px;
-    display: none;
+    line-height: 40px;
+    font-size: 22px;
+    letter-spacing: 2px;
 }
 
 .content03 .rightbox .wordbox .text.two {
@@ -779,183 +778,513 @@ a.li p {
     display: none;
 }
 
-
-/*.content03 .rightbox .wordbox .text.four {display: none;}*/
-
-.content03 .rightbox .wordbox .text.one p {
-    padding-top: 83px;
-}
-
 .content03 .rightbox .wordbox .pic {
-    position: absolute;
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    width: 100%;
-    height: 50%;
-    bottom: 0px;
+    overflow: hidden;
+    width: 30%;
+    margin: 0 auto;
 }
 
 .content03 .rightbox .wordbox .pic img.plane {
-    display: block;
-    position: absolute;
-    width: 30%;
-    margin-left: 20px;
-    margin-top: -6px;
-    display: none;
-    /*test*/
+    width: 100%;
 }
 
 
 /*content03 長條三個區塊*/
 
 .content03 .block {
-    display: block;
     position: relative;
     top: 0px;
-    width: 1920px;
-    height: 1084px;
+    width: 100%;
+    height: 100%;
     z-index: -1;
 }
 
-.content03 .block .top {
-    display: block;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 33%;
-}
-
-.content03 .block .middle {
-    margin-top: 362px;
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 33%;
-}
-
+.content03 .block .top,
+.content03 .block .middle,
 .content03 .block .bottom {
-    margin-top: 723px;
-    display: block;
     position: absolute;
     width: 100%;
-    height: 33%;
+    height: 255px;
+    overflow: hidden;
 }
 
+
+}
+.content03 .block .top {
+    top: 0px;
+}
+.content03 .block .middle {
+    margin-top: 256.5px;
+    /*    margin: 0 auto;*/
+}
+.content03 .block .bottom {
+    bottom: 0px;
+    /*margin-top: 513px;*/
+}
 .content03 .block img.bg {
     display: block;
     position: absolute;
     margin: 0 auto;
     width: 100%;
 }
-
 .content03 .block .word {
-    display: block;
-    position: relative;
+    position: absolute;
     width: 60%;
     height: 100%;
     margin-left: 266px;
-    /* background-color: white; */
 }
-
 .content03 .block .word .title {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    font-size: 40pt;
+    float: right;
+    font-size: 40px;
     color: white;
     letter-spacing: 3px;
-    /*background-color: white;*/
+    overflow: hidden;
+    padding: 100px 10px;
 }
-
+.content03 .block .top .word .title {
+    /* text-align: right;*/
+    
+    margin-right: 100px;
+}
+.content03 .block .middle .word .title {
+    /* text-align: right;*/
+    
+    margin-right: 300px;
+}
+.content03 .block .bottom .word .title {
+    color: #4c5764;
+    float: left;
+}
 .content03 .block .word .title span {
-    display: block;
-    width: 100%;
-    padding-top: 12.5%;
+    padding: 20px 0;
+    font-family: "chinese_superlight";
+    overflow: hidden;
 }
-
 .content03 .block .top .word .title span {
     text-align: right;
 }
 
-.content03 .block .middle .title span {
-    padding-left: 42%;
+/*content04*/
+.content04 {
+    position: relative;
+    width: 100%;
+    height: 768px;
+    /*    overflow: hidden;*/
 }
-
-.content03 .block .bottom .title span {
-    padding-left: 15%;
-    color: #4d5865;
-}
-
-.content03 .block .text {
-    display: flex;
-    justify-content: center;
+.content04 .colorbg {
     position: absolute;
+    width: 100%;
     height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    overflow: hidden;
+}
+.content04 .colorbg img {
     width: 100%;
-    font-size: 25pt;
+    height: 100%;
+}
+.content04 .con_1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*leftbox設定*/
+.content04 .con_1 .leftbox {
+    position: relative;
+    width: 465px;
+    height: 100%;
+    float: left;
+    z-index: 3;
+}
+.content04 .con_1 .leftbox .picbox {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    animation: move_left 3.2s ease-out 1s forwards;
+    -webkit-animation: move_left 3.2s ease-out 1s forwards;
+}
+.content04 .con_1 .leftbox .picbox img {
+    /*pen有從螢幕外滑入的動畫(滑鼠滾輪滑動)*/
+    
+    width: 100%;
+    height: 100%;
+}
+@keyframes move_left {
+    0% {
+        opacity: 0;
+        left: -50%;
+    }
+    
+    50% {
+        opacity: 0;
+        left: -20%;
+    }
+    
+    100% {
+        opacity: 1;
+        left: 0%;
+    }
+}
+@-webkit-keyframes move_left {
+    0% {
+        opacity: 0;
+        left: -50%;
+    }
+    
+    50% {
+        opacity: 0;
+        left: -20%;
+    }
+    
+    100% {
+        opacity: 1;
+        left: 0%;
+    }
+}
+.content04 .con_1 h1 {
+    position: absolute;
+    top: 100px;
+    left: 320px;
+    font-size: 25px;
     color: white;
-    letter-spacing: 3px;
-    /*background-color: blue;*/
+    font-style: italic;
+    font-family: "chinese_superlight";
+    animation: move_left_span 2.5s;
+    -webkit-animation: move_left_span 2.5s;
+    z-index: 2;
+    letter-spacing: 5px;
+    line-height: 35px;
+}
+@keyframes move_left_span {
+    0% {
+        opacity: 0;
+        left: 0px;
+    }
+    
+    50% {
+        opacity: 0;
+        left: 160px;
+    }
+    
+    100% {
+        opacity: 1;
+        left: 320px;
+    }
+}
+@-webkit-keyframes move_left_span {
+    0% {
+        opacity: 0;
+        padding-left: -5%;
+    }
+    
+    50% {
+        opacity: 0;
+        padding-left: 5%;
+    }
+    
+    100% {
+        opacity: 1;
+        padding-left: 10%;
+    }
 }
 
-.content03 .block .text p {
+/*rightbox設定*/
+.content04 .rightbox {
+    width: 60%;
+    height: 100%;
+    float: right;
+    position: relative;
+    z-index: 2;
+}
+.content04 .con_1 h2 {
+    opacity: 0;
+    font-family: "chinese_superlight";
+    color: #2f2b28;
+    font-size: 18px;
     display: block;
+    padding: 20px 0;
+    border-bottom: 2px solid #e3a864;
+    /*    margin-top: 350px;*/
+    
+    width: 41%;
+    letter-spacing: 3px;
+    line-height: 30px;
+    animation: move_left_p 3.5s ease 1s forwards;
+    -webkit-animation: move_left_p 3.5s ease 1s forwards;
+}
+.content04 .con_1 .rightbox .text {
+    position: absolute;
     width: 100%;
-    padding-top: 10%;
+    height: 50%;
+    /* top: 25%; */
+    
+    left: 0px;
+    bottom: 0px;
+}
+.content04 .rightbox .text p {
+    top: 0px;
+    font-family: "chinese_superlight";
+    margin-left: 0%;
+    font-size: 20px;
+    color: #2f2b28;
+    font-weight: 3px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    animation: move_left_p 3.5s;
+    -webkit-animation: move_left_p 3.5s;
+}
+@keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+.content04 .con_1 .rightbox .text p {
+    opacity: 0;
+    top: 25%;
+    color: #505459;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    margin-left: 10px;
+    /*    text-indent: 2px;*/
+    
+    animation: move_left_p 3.5s ease 1.3s forwards;
+    -webkit-animation: move_left_p 3.5s ease 1.3s forwards;
+}
+.content04 .con_1 .rightbox .text p.one {
+    margin-top: 20px;
+}
+.content04 .con_1 .rightbox .text p.two {
+    margin-top: 30px;
+    color: #b28247;
+}
+@keyframes move_left_title {
+    0% {
+        opacity: 0;
+        margin-left: -10%;
+    }
+    
+    50% {
+        opacity: 0;
+        margin-left: -3%;
+    }
+    
+    100% {
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+@-webkit-keyframes move_left_title {
+    0% {
+        opacity: 0;
+        margin-left: -10%;
+    }
+    
+    50% {
+        opacity: 0;
+        margin-left: -3%;
+    }
+    
+    100% {
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+@keyframes move_left_p {
+    0% {
+        opacity: 0;
+        margin-left: -5%;
+    }
+    
+    50% {
+        opacity: 0;
+        margin-left: -0%;
+    }
+    
+    100% {
+        opacity: 1;
+        margin-left: 3%;
+    }
+}
+@-webkit-keyframes move_left_p {
+    0% {
+        opacity: 0;
+        margin-left: -5%;
+    }
+    
+    50% {
+        opacity: 0;
+        margin-left: -0%;
+    }
+    
+    100% {
+        opacity: 1;
+        margin-left: 3%;
+    }
+}
+.content04 .con_1 {
+    display: none;
 }
 
-.content03 .block .middle .text p {
-    padding-left: 35%;
+/*四大保證區塊*/
+.content04 .con_2 {
+    position: relative;
+    z-index: 2;
+    height: 768px;
+    overflow: hidden;
+}
+.content04 .con_2 .leftbox {
+    position: absolute;
+    left: 0px;
+    width: 705px;
+    height: 100%;
+}
+.content04 .con_2 .leftbox img.one,
+.content04 .con_2 .leftbox img.two {
+    position: absolute;
+    width: 100%;
+}
+.content04 .con_2 .leftbox img.one {
+    top: 0px;
+}
+.content04 .con_2 .leftbox img.two {
+    bottom: 0px;
+    z-index: 3;
+}
+.content04 .con_2 .leftbox .wordbox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.content04 .con_2 .leftbox .wordbox h1 {
+    color: #dfccc4;
+    font-size: 35px;
+    font-family: "chinese_superlight";
+    letter-spacing: 3px;
+    line-height: 40px;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 250px;
+    /* text-align: center; */
+}
+.content04 .con_2 .leftbox .wordbox .text {
+    margin-top: 50px;
+}
+.content04 .con_2 .leftbox .wordbox .text .item {
+    width: 60%;
+    position: relative;
+    padding: 30px 0px;
+    margin-left: 60px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 3;
+    color: #fff;
+}
+.content04 .con_2 .leftbox .wordbox .text .item span {
+    font-size: 25px;
+    font-family: "chinese_superlight";
+    display: block;
+    padding: 10px 0;
+    border-bottom: 2px solid #e3a864;
+    width: 80%;
+    letter-spacing: 3px;
+}
+.content04 .con_2 .leftbox .wordbox .text .item p {
+    font-size: 18px;
+    font-family: "chinese_superlight";
+    line-height: 38px;
+    padding: 20px 0;
+    letter-spacing: 3px;
+    overflow: hidden;
+    width: 80%;
 }
 
-.content03 .block .bottom .text p {
-    padding-top: 12.5%;
+/*rightbox*/
+.content04 .con_2 .rightbox {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 790px;
+    height: 100%;
+    overflow: hidden;
+}
+.content04 .con_2 .rightbox .item_block {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin-top: 350px;
+    padding: 0 50px;
+}
+.content04 .con_2 .rightbox .item {
+    width: 130px;
+    height: auto;
+    float: left;
+    margin-left: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+.content04 .con_2 .rightbox .item p {
+    text-align: center;
+    font-family: "chinese_superlight";
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #333333;
 }
 
+/*Iconbox設定*/
+.content04 .con_2 .rightbox .item.one .icon {
+    background: url(../img/index/content04/money_icon.png) top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.content04 .con_2 .rightbox .item.two .icon {
+    background: url(../img/index/content04/use_icon.png) top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.content04 .con_2 .rightbox .item.three .icon {
+    background: url(../img/index/content04/system_icon.png) top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.content04 .con_2 .rightbox .item.four .icon {
+    background: url(../img/index/content04/wisdom_icon.png) top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.content04 .con_2 .rightbox .item .icon {
+    width: 110px;
+    height: 110px;
+    padding: 10px;
+}
 
 /*隱藏部分區塊*/
-
-.content03 .block .top img.bg.one {
-    /*display: none;*/
-}
-
-
-/*.content03 .block .middle img.bg.one{display: none;}*/
-
-.content03 .block .bottom img.bg.one {
-    /*display: none;*/
-}
-
-
-/*.content03 .block .top .word .title{display: none;}*/
-
-.content03 .block .middle .word .title {
-    /*display: none;*/
-}
-
-.content03 .block .top .word .text {
-    /*display: none;*/
-}
-
-
-/*.content03 .block .middle .word .text{display: none;}*/
-
-.content03 .block .bottom .word .text {
-    /*display: none;*/
-}
-
 @media screen and (min-width: 1800px) {
     /*1800*/
+    
     .content01 {
         height: 1084px;
     }
+    
     .content01 .centerbox {
         width: 900px;
         margin-left: -450px;
     }
+    
     @keyframes word_title {
         0% {
             opacity: 0;
@@ -970,74 +1299,92 @@ a.li p {
             margin-top: 210px;
         }
     }
+    
     .content01 .centerbox .title {
         margin-top: 170px;
         width: 550px;
     }
+    
     .content01 .centerbox .title h1 {
         letter-spacing: 10px;
         font-size: 35px;
     }
+    
     .content01 .centerbox .wordbox {
         margin-top: 300px;
         letter-spacing: 5px;
         width: 350px;
         font-size: 18px;
     }
+    
     .content01 .centerbox .wordbox .text p {
         font-size: 24px;
     }
+    
     .header_center {
         height: 91px;
     }
+    
     .header_center .nav {
         width: 900px;
     }
+    
     a.li {
         font-size: 15pt;
         padding: 33px 55px;
     }
     /*second*/
+    
     .content02 {
         height: 1084px;
     }
+    
     .content02 .money .left.front,
     .content02 .money .right.front {
         width: 800px;
     }
+    
     .content02 .money .left.front img {
         left: -400px;
         bottom: -450px;
     }
+    
     .content02 .money .right.front img {
         right: -400px;
         bottom: -450px;
     }
+    
     .content02 .centerbox {
         width: 700px;
         padding: 350px 0px;
     }
+    
     .content02 .wordbox p.one {
         font-size: 30px;
         line-height: 50px;
     }
+    
     #content02 .you {
         width: 350px;
         margin-top: 50px;
         line-height: 50px;
     }
+    
     .content02 .wordbox p.three {
         font-size: 30px;
         line-height: 50px;
     }
+    
     #content02 h1 {
         font-size: 45px;
     }
+    
     .content02 .wordbox p.four {
         font-size: 50px;
         padding-top: 45px;
         letter-spacing: 8px;
     }
+    
     @-webkit-keyframes move_left_money {
         0% {
             opacity: 0;
@@ -1055,6 +1402,7 @@ a.li p {
             bottom: 0px;
         }
     }
+    
     @keyframes move_left_money {
         0% {
             opacity: 0;
@@ -1072,6 +1420,7 @@ a.li p {
             bottom: 0px;
         }
     }
+    
     @-webkit-keyframes move_right_money {
         0% {
             opacity: 0;
@@ -1089,6 +1438,7 @@ a.li p {
             bottom: 0px;
         }
     }
+    
     @keyframes move_right_money {
         0% {
             opacity: 0;
@@ -1107,12 +1457,15 @@ a.li p {
         }
     }
     /*second*/
+    
     .content02 .first {
         display: none;
     }
+    
     .content02 .second {
         display: block;
     }
+    
     .content02 .second .wordbox {
         width: 550px;
         padding: 105px 0px;
@@ -1120,32 +1473,37 @@ a.li p {
         z-index: -1;
         overflow: hidden;
     }
+    
     .content02 .second .item {
         padding: 20px 8px;
     }
+    
     .content02 .second .item .right {
         right: 29px;
         width: 350px;
     }
+    
     .content02 .second .item p.text-left {
         font-size: 50px;
         padding: 20px 50px;
     }
+    
     .content02 .second .item p.text-right {
         font-size: 25px;
         padding: 30px 0;
         margin-right: 105px;
         letter-spacing: 5px;
     }
+    
     .middlebar h1 {
         font-size: 35px;
         padding: 70px 0px;
     }
+    
     .content03 {
         height: 1084px;
     }
 }
-
 @media screen and (max-width:1365px) and (min-width:1024px) {
     .content01 .colorbg img,
     .content01 .blackbg img,
@@ -1159,554 +1517,18 @@ a.li p {
     }
 }
 
-
 /*----------------------------------content2-------------------------*/
-
 
 /*content03*/
 
-
-/*content04*/
-
-.content04 {
-    display: block;
-    position: relative;
-    /*margin: 0 auto;*/
-    width: 100%;
-    height: 1084px;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.content04 .colorbg {
-    display: block;
-    position: absolute;
-    width: 100%;
-    /* height: 100%; */
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    background-position: fixed;
-}
-
-
-/*leftbox設定*/
-
-.content04 .leftbox {
-    display: block;
-    position: absolute;
-    width: 1304.5px;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    /*background-color: white;*/
-    z-index: 1;
-}
-
-.content04 .leftbox .picbox {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /*background-color: black;*/
-}
-
-.content04 .leftbox .picbox img {
-    display: block;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-.content04 .leftbox .picbox img.one {
-    /*pen有從螢幕外滑入的動畫(滑鼠滾輪滑動)*/
-    position: absolute;
-    width: 50%;
-    left: 0px;
-    animation: move_left 3.2s;
-    -webkit-animation: move_left 3.2s;
-}
-
-@keyframes move_left {
-    0% {
-        opacity: 0;
-        left: -50%;
-    }
-    50% {
-        opacity: 0;
-        left: -20%;
-    }
-    100% {
-        opacity: 1;
-        left: 0%;
-    }
-}
-
-@-webkit-keyframes move_left {
-    0% {
-        opacity: 0;
-        left: -50%;
-    }
-    50% {
-        opacity: 0;
-        left: -20%;
-    }
-    100% {
-        opacity: 1;
-        left: 0%;
-    }
-}
-
-.content04 .topbox {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 25%;
-    /*background-color: black;*/
-    z-index: 1;
-}
-
-.content04 .topbox .wordbox {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 50%;
-    height: 100%;
-    /*background-color: yellow;*/
-    margin-left: 20%;
-    bottom: 0px;
-}
-
-.content04 .topbox .wordbox span {
-    display: block;
-    font-size: 30pt;
-    color: white;
-    padding-left: 10%;
-    padding-top: 12%;
-    font-style: italic;
-    /* position: absolute; */
-    animation: move_left_span 2.5s;
-    -webkit-animation: move_left_span 2.5s;
-}
-
-@keyframes move_left_span {
-    0% {
-        opacity: 0;
-        padding-left: -5%;
-    }
-    50% {
-        opacity: 0;
-        padding-left: 5%;
-    }
-    100% {
-        opacity: 1;
-        padding-left: 10%;
-    }
-}
-
-@-webkit-keyframes move_left_span {
-    0% {
-        opacity: 0;
-        padding-left: -5%;
-    }
-    50% {
-        opacity: 0;
-        padding-left: 5%;
-    }
-    100% {
-        opacity: 1;
-        padding-left: 10%;
-    }
-}
-
-
-/*rightbox設定*/
-
-.content04 .rightbox {
-    display: block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 60%;
-    height: 100%;
-    /*background-color: yellow;*/
-    z-index: 1;
-}
-
-.content04 .rightbox .wordbox {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 50%;
-    left: 0%;
-    top: 45%;
-    /*background-color: yellow;*/
-}
-
-.content04 .rightbox .wordbox .title {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 25%;
-    /*    background-color: white;*/
-}
-
-.content04 .rightbox .wordbox .title .word {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 60%;
-    top: 0%;
-    left: 0%;
-    /*background-color: black;*/
-}
-
-.content04 .rightbox .wordbox .title .word p {
-    top: 0%;
-    margin-left: 0%;
-    font-size: 20pt;
-    font-weight: 1px;
-    color: #2f2b28;
-    font-weight: 3px;
-    letter-spacing: 3px;
-    line-height: 40px;
-    animation: move_left_title 3.5s;
-    -webkit-animation: move_left_title 3.5s;
-}
-
-.content04 .rightbox .wordbox .title .line {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 40%;
-    /*   background-color: red;*/
-    bottom: 0%;
-    left: 0%;
-}
-
-.content04 .rightbox .wordbox .title .line img {
-    display: block;
-    position: absolute;
-    width: 50%;
-    animation: opa 3.5s;
-    -webkit-animation: opa 3.5s;
-}
-
-@keyframes opa {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.content04 .rightbox .wordbox .text {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 75%;
-    top: 25%;
-    left: 0%;
-    /*background-color: white;*/
-}
-
-.content04 .rightbox .wordbox .text p {
-    display: block;
-    top: 25%;
-    margin-left: 3%;
-    color: #505459;
-    font-size: 15pt;
-    line-height: 40px;
-    letter-spacing: 3px;
-    animation: move_left_p 3.5s;
-    -webkit-animation: move_left_p 3.5s;
-}
-
-@keyframes move_left_title {
-    0% {
-        opacity: 0;
-        margin-left: -10%;
-    }
-    50% {
-        opacity: 0;
-        margin-left: -3%;
-    }
-    100% {
-        opacity: 1;
-        margin-left: 0%;
-    }
-}
-
-@-webkit-keyframes move_left_title {
-    0% {
-        opacity: 0;
-        margin-left: -10%;
-    }
-    50% {
-        opacity: 0;
-        margin-left: -3%;
-    }
-    100% {
-        opacity: 1;
-        margin-left: 0%;
-    }
-}
-
-@keyframes move_left_p {
-    0% {
-        opacity: 0;
-        margin-left: -5%;
-    }
-    50% {
-        opacity: 0;
-        margin-left: -0%;
-    }
-    100% {
-        opacity: 1;
-        margin-left: 3%;
-    }
-}
-
-@-webkit-keyframes move_left_p {
-    0% {
-        opacity: 0;
-        margin-left: -5%;
-    }
-    50% {
-        opacity: 0;
-        margin-left: -0%;
-    }
-    100% {
-        opacity: 1;
-        margin-left: 3%;
-    }
-}
-
-.content04 .rightbox .wordbox .pic {
-    display: block;
-    position: absolute;
-    width: 55%;
-    height: 40%;
-    /* bottom: -2%; */
-    top: 57%;
-    left: 26%;
-    /* background-color: white; */
-}
-
-.content04 .rightbox .wordbox .pic img {
-    display: block;
-    position: absolute;
-    width: 70%;
-}
-
-.content04 .leftbox .picbox img.one {
-    display: none;
-}
-
-.content04 .topbox {
-    display: none;
-}
-
-.content04 .rightbox .wordbox {
-    display: none;
-}
-
-
-/*四大保證區塊*/
-
-.content04 .leftbox .picbox img.two {
-    height: 100%;
-    overflow: hidden;
-}
-
-.content04 .leftbox .picbox img.three {
-    height: 100%;
-    overflow: hidden;
-}
-
-.content04 .leftbox .wordbox {
-    /*display: none;*/
-    display: block;
-    position: relative;
-    width: 50%;
-    height: 65%;
-    left: 3%;
-    top: 25%;
-    /*background-color:white;*/
-}
-
-.content04 .leftbox .wordbox .title {
-    /* display: none; */
-    display: block;
-    position: absolute;
-    width: 90%;
-    height: 20%;
-    left: 10%;
-    top: 8%;
-    /* background-color: black; */
-}
-
-.content04 .leftbox .wordbox .title h1 {
-    font-size: 40pt;
-    color: #dfccc4;
-    margin-top: 0%;
-    line-height: 78px;
-    letter-spacing: 3px;
-}
-
-.content04 .leftbox .wordbox .text {
-    /*display: none;*/
-    display: block;
-    position: absolute;
-    width: 90%;
-    height: 65%;
-    left: 0%;
-    bottom: 0%;
-    overflow: hidden;
-    color: white;
-    /*background-color:black;*/
-}
-
-
-/*左邊區塊Line*/
-
-.content04 .leftbox .wordbox .text img {
-    display: block;
-    position: absolute;
-    margin-top: 16%;
-    width: 100%;
-}
-
-.content04 .leftbox .wordbox .text .item {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    z-index: 1;
-    /*background-color: yellow;*/
-}
-
-.content04 .leftbox .wordbox .text .bigfont {
-    display: flex;
-    position: absolute;
-    top: 5%;
-    width: 100%;
-    height: 25%;
-    font-size: 25pt;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 4px;
-    /*background-color: black;*/
-}
-
-.content04 .leftbox .wordbox .text p {
-    display: block;
-    font-size: 20pt;
-    margin-top: 26%;
-    letter-spacing: 3px;
-    line-height: 55px;
-}
-
-.content04 .leftbox .wordbox .text .two {
-    display: none;
-}
-
-.content04 .leftbox .wordbox .text .three {
-    display: none;
-}
-
-.content04 .leftbox .wordbox .text .four {
-    display: none;
-}
-
-
-/*Iconbox設定*/
-
-.content04 .rightbox .iconbox {
-    display: block;
-    position: relative;
-    width: 90%;
-    height: 25%;
-    top: 47%;
-    left: 5%;
-    z-index: 1;
-    /*background-color: red;*/
-}
-
-.content04 .rightbox .iconbox .item {
-    float: left;
-    display: block;
-    width: 20%;
-    height: 100%;
-    margin-left: 2%;
-    /*background-color: white;*/
-}
-
-.content04 .rightbox .iconbox .item.one {
-    margin-left: 0%;
-}
-
-.content04 .rightbox .iconbox .item .icon {
-    display: block;
-    width: 100%;
-    height: 75%;
-    /*background-color: yellow;*/
-}
-
-.content04 .rightbox .iconbox img.one {
-    width: 100%;
-    float: left;
-    overflow: hidden;
-}
-
-.content04 .rightbox .iconbox .item .word {
-    display: block;
-    width: 100%;
-    height: 25%;
-    text-align: center;
-    /*background-color: blue;*/
-}
-
-.content04 .rightbox .iconbox .item .word p {
-    padding: 15% 0 0 0;
-    font-size: 20pt;
-    line-height: 3px;
-    color: #333333;
-}
-
-.content04 .rightbox .iconbox img.two {
-    display: none;
-}
-
-.content04 .rightbox .iconbox img.two {
-    display: none;
-}
-
-
 /*content05*/
-
 .content05 {
     display: block;
     position: relative;
-    /*margin: 0 auto;*/
     width: 100%;
-    height: 845px;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
+    height: 592px;
+    overflow: hidden;
 }
-
 .content05 .colorbg {
     display: block;
     position: absolute;
@@ -1714,55 +1536,53 @@ a.li p {
     top: 0px;
     left: 0px;
 }
-
+.content05 .colorbg img {
+    width: 100%;
+    height: 100%;
+}
 .content05 .leftbox {
     display: block;
     position: absolute;
     width: 50%;
     height: 100%;
-    /*background-color: white;*/
 }
-
 .content05 .leftbox .location {
     display: block;
     position: relative;
     width: 45%;
-    height: 30%;
-    margin: 24% 0 0 58%;
-    /* background-color: red; */
+    height: 36%;
+    margin-left: 62%;
+    margin-top: 36%;
 }
-
 .content05 .leftbox .location .word {
     display: block;
     position: absolute;
     width: 75%;
     height: 33%;
     top: 0%;
-    /*left: 0%;background-color: blue;*/
     z-index: 1;
 }
-
 .content05 .leftbox .location .word p {
+    /* display: none; */
+    
     color: white;
-    font-size: 30pt;
+    font-size: 30px;
+    padding: 0px 40px;
     font-family: "Microsoft Tai Le";
-    margin: 12% 0px 0px 20%;
+    /* margin: 12% 0px 0px 20%; */
 }
-
 .content05 .leftbox .location .pic {
-    display: block;
-    position: absolute;
-    width: 30%;
-    height: 70%;
+    position: relative;
+    width: 41px;
+    height: 61px;
     left: 0%;
     bottom: 0%;
-    /*background-color: blue;*/
 }
-
 .content05 .leftbox .location .pic img {
+    position: absolute;
     width: 100%;
+    z-index: 2;
 }
-
 .content05 .leftbox .location .line {
     display: block;
     position: absolute;
@@ -1771,9 +1591,195 @@ a.li p {
     margin-left: 73%;
     top: 0%;
 }
-
 .content05 .leftbox .location .line img {
     width: 100%;
-    margin-top: 33%;
-    margin-left: 0%;
+    margin-top: 0px;
 }
+.content05 .rightbox {
+    position: absolute;
+    width: 425px;
+    height: 400px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    right: 185px;
+    top: 100px;
+    /* margin-right: 300px; */
+    /* margin-top: 50%; */
+    
+    z-index: 3;
+}
+
+.content05 .rightbox .wordbox{
+    width: 100%;
+    height: 100%;
+
+}
+
+.content05 .rightbox .wordbox .top {
+    width: 40%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.content05 .rightbox .wordbox .top img {
+    position: absolute;
+    float: left;
+    width: 40px;
+    left: 0px;
+    top: 8px;
+}
+
+.content05 .rightbox .wordbox  p{
+    color: #fff;font-family: "chinese_superlight";
+}
+
+
+.content05 .rightbox .wordbox .top p{
+    float: right;
+    color: #fff;font-family: "chinese_superlight";
+    padding: 10px 0;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.content05 .rightbox .wordbox .bottom{
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.content05 .rightbox .wordbox .bottom .item {
+    width: 90%;
+    overflow: hidden;
+    padding: 20px 0px;
+    margin: 0 auto;
+}
+.content05 .rightbox .wordbox .bottom .item p{
+    float: left;
+    text-align: left;
+    padding-left:10px; 
+    color: #fff;
+    font-family: "chinese_superlight";
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding: 5px 10px;
+}
+.content05 .rightbox .wordbox .bottom .item p.left{
+    float: left;
+    display: block;
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 5px 10px;
+    color: #3461aa;
+
+}
+
+
+
+
+
+
+/*content06*/
+.content06 {
+    width: 100%;
+    height: 768px;
+    position: relative;
+    margin-top: -3%;
+    z-index: -1;
+}
+.content06 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.content06 h1 {
+
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    padding: 100px 0;
+    font-family: "chinese_superlight";
+    margin-top: 0px;
+    color: #717071;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.content06 .form {
+    width: 400px;
+    left: 50%;
+    height: 400px;
+    background-color: rgba(255,255,255,0.5);
+    position: relative;
+    margin-left: -200px;
+    margin-top: -50px;
+}
+
+.content06 .form .line{
+    position: absolute;
+    top: 0px;
+    width: 700px;
+    left: 50%;
+    height: 3px;
+    background-color: #e8c296;
+     margin-left: -350px;
+}
+
+.content06 .form p{
+    float: left;
+    padding: 20px 0px;
+} 
+
+.content06 .form input{
+    float: right;
+    width: 60%;
+    padding: 10px 0px;
+    margin-top: 10px;
+    padding: 10px 5px;
+    margin-right: 30px;
+    background-color: transparent;
+    border: 1px solid #a18877;
+}
+
+.content06 .form .item{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.content06 .form .item p{
+     font-family: "chinese_superlight";
+     color: #969696;
+     letter-spacing: 2px;
+     font-size: 15px;
+}
+
+.content06 .form input[type=submit] {
+    position: absolute;
+    bottom: 20px;
+    width: 150px;
+    height: 40px;
+    left: 50%;
+    margin-left: -75px;
+    background-color: transparent;
+    font-family: Microsoft JhengHei;
+    color: #a18877;
+    cursor: pointer;
+    border: 1px solid #ac9f80;
+    z-index: 2;
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-shadow: 0px 1px 7px rgba(171, 130, 99, 0.3);
+    font-family: "chinese_superlight";
+    -webkit-transition: background 0.4s ease 0s !important;
+    -khtml-transition: background 0.4s ease 0s !important;
+    -moz-transition: background 0.4s ease 0s !important;
+    -ms-transition: background 0.4s ease 0s !important;
+    -o-transition: background 0.4s ease 0s !important;
+    transition: background 0.4s ;
+
+    }
